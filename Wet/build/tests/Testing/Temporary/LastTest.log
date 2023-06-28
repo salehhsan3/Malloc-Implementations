@@ -1,0 +1,2570 @@
+Start testing: Jan 18 08:56 UTC
+----------------------------------------------------------
+1/85 Testing: malloc_1.Sanity
+1/85 Test: malloc_1.Sanity
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_1_test" "Sanity"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_1.Sanity" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Sanity
+Randomness seeded to: 253516568
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_1.Sanity" end time: Jan 18 08:56 UTC
+"malloc_1.Sanity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/85 Testing: malloc_1.Check size
+2/85 Test: malloc_1.Check size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_1_test" "Check size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_1.Check size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Check size
+Randomness seeded to: 1787855083
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_1.Check size" end time: Jan 18 08:56 UTC
+"malloc_1.Check size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/85 Testing: malloc_1.0 size
+3/85 Test: malloc_1.0 size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_1_test" "0 size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_1.0 size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: 0 size
+Randomness seeded to: 1202010741
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_1.0 size" end time: Jan 18 08:56 UTC
+"malloc_1.0 size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/85 Testing: malloc_1.Max size
+4/85 Test: malloc_1.Max size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_1_test" "Max size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_1.Max size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Max size
+Randomness seeded to: 3194086293
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_1.Max size" end time: Jan 18 08:56 UTC
+"malloc_1.Max size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/85 Testing: malloc_2.Sanity
+5/85 Test: malloc_2.Sanity
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Sanity"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Sanity" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Sanity
+Randomness seeded to: 430343184
+===============================================================================
+All tests passed (19 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Sanity" end time: Jan 18 08:56 UTC
+"malloc_2.Sanity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/85 Testing: malloc_2.Check size
+6/85 Test: malloc_2.Check size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Check size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Check size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Check size
+Randomness seeded to: 4085076268
+===============================================================================
+All tests passed (33 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Check size" end time: Jan 18 08:56 UTC
+"malloc_2.Check size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/85 Testing: malloc_2.0 size
+7/85 Test: malloc_2.0 size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "0 size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.0 size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: 0 size
+Randomness seeded to: 3360022987
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.0 size" end time: Jan 18 08:56 UTC
+"malloc_2.0 size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/85 Testing: malloc_2.Max size
+8/85 Test: malloc_2.Max size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Max size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Max size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Max size
+Randomness seeded to: 866865780
+===============================================================================
+All tests passed (27 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Max size" end time: Jan 18 08:56 UTC
+"malloc_2.Max size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/85 Testing: malloc_2.free
+9/85 Test: malloc_2.free
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "free"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.free" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free
+Randomness seeded to: 951886335
+===============================================================================
+All tests passed (59 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.free" end time: Jan 18 08:56 UTC
+"malloc_2.free" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/85 Testing: malloc_2.free 2
+10/85 Test: malloc_2.free 2
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "free 2"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.free 2" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free 2
+Randomness seeded to: 4026592520
+===============================================================================
+All tests passed (59 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.free 2" end time: Jan 18 08:56 UTC
+"malloc_2.free 2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/85 Testing: malloc_2.free 3
+11/85 Test: malloc_2.free 3
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "free 3"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.free 3" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free 3
+Randomness seeded to: 1068223547
+===============================================================================
+All tests passed (59 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.free 3" end time: Jan 18 08:56 UTC
+"malloc_2.free 3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/85 Testing: malloc_2.Reuse
+12/85 Test: malloc_2.Reuse
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Reuse"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Reuse" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse
+Randomness seeded to: 2708377427
+===============================================================================
+All tests passed (32 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Reuse" end time: Jan 18 08:56 UTC
+"malloc_2.Reuse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/85 Testing: malloc_2.Reuse two blocks
+13/85 Test: malloc_2.Reuse two blocks
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Reuse two blocks"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Reuse two blocks" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks
+Randomness seeded to: 3410467464
+===============================================================================
+All tests passed (46 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Reuse two blocks" end time: Jan 18 08:56 UTC
+"malloc_2.Reuse two blocks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/85 Testing: malloc_2.Reuse two blocks reverse
+14/85 Test: malloc_2.Reuse two blocks reverse
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Reuse two blocks reverse"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Reuse two blocks reverse" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks reverse
+Randomness seeded to: 2282864723
+===============================================================================
+All tests passed (46 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Reuse two blocks reverse" end time: Jan 18 08:56 UTC
+"malloc_2.Reuse two blocks reverse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/85 Testing: malloc_2.Reuse two blocks both
+15/85 Test: malloc_2.Reuse two blocks both
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Reuse two blocks both"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Reuse two blocks both" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks both
+Randomness seeded to: 1908828675
+===============================================================================
+All tests passed (46 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Reuse two blocks both" end time: Jan 18 08:56 UTC
+"malloc_2.Reuse two blocks both" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/85 Testing: malloc_2.Reuse two blocks sizes small
+16/85 Test: malloc_2.Reuse two blocks sizes small
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Reuse two blocks sizes small"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Reuse two blocks sizes small" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks sizes small
+Randomness seeded to: 400290846
+===============================================================================
+All tests passed (46 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Reuse two blocks sizes small" end time: Jan 18 08:56 UTC
+"malloc_2.Reuse two blocks sizes small" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/85 Testing: malloc_2.Reuse two blocks sizes large
+17/85 Test: malloc_2.Reuse two blocks sizes large
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "Reuse two blocks sizes large"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.Reuse two blocks sizes large" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks sizes large
+Randomness seeded to: 2993543392
+===============================================================================
+All tests passed (46 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.Reuse two blocks sizes large" end time: Jan 18 08:56 UTC
+"malloc_2.Reuse two blocks sizes large" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/85 Testing: malloc_2.scalloc
+18/85 Test: malloc_2.scalloc
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "scalloc"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.scalloc" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc
+Randomness seeded to: 1590224908
+===============================================================================
+All tests passed (51 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.scalloc" end time: Jan 18 08:56 UTC
+"malloc_2.scalloc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/85 Testing: malloc_2.scalloc taint
+19/85 Test: malloc_2.scalloc taint
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "scalloc taint"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.scalloc taint" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc taint
+Randomness seeded to: 3233907766
+===============================================================================
+All tests passed (232 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.scalloc taint" end time: Jan 18 08:56 UTC
+"malloc_2.scalloc taint" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/85 Testing: malloc_2.scalloc 0 size
+20/85 Test: malloc_2.scalloc 0 size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "scalloc 0 size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.scalloc 0 size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc 0 size
+Randomness seeded to: 2476612531
+===============================================================================
+All tests passed (21 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.scalloc 0 size" end time: Jan 18 08:56 UTC
+"malloc_2.scalloc 0 size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/85 Testing: malloc_2.scalloc Max size num
+21/85 Test: malloc_2.scalloc Max size num
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "scalloc Max size num"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.scalloc Max size num" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc Max size num
+Randomness seeded to: 4210250701
+===============================================================================
+All tests passed (27 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.scalloc Max size num" end time: Jan 18 08:56 UTC
+"malloc_2.scalloc Max size num" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/85 Testing: malloc_2.scalloc Max size size
+22/85 Test: malloc_2.scalloc Max size size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "scalloc Max size size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.scalloc Max size size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc Max size size
+Randomness seeded to: 2197611927
+===============================================================================
+All tests passed (27 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.scalloc Max size size" end time: Jan 18 08:56 UTC
+"malloc_2.scalloc Max size size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/85 Testing: malloc_2.scalloc Max size both
+23/85 Test: malloc_2.scalloc Max size both
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "scalloc Max size both"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.scalloc Max size both" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc Max size both
+Randomness seeded to: 3736574913
+===============================================================================
+All tests passed (35 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.scalloc Max size both" end time: Jan 18 08:56 UTC
+"malloc_2.scalloc Max size both" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/85 Testing: malloc_2.realloc
+24/85 Test: malloc_2.realloc
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "realloc"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.realloc" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: realloc
+Randomness seeded to: 1573694654
+===============================================================================
+All tests passed (36 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.realloc" end time: Jan 18 08:56 UTC
+"malloc_2.realloc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/85 Testing: malloc_2.realloc shrink
+25/85 Test: malloc_2.realloc shrink
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "realloc shrink"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.realloc shrink" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: realloc shrink
+Randomness seeded to: 626102437
+===============================================================================
+All tests passed (36 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.realloc shrink" end time: Jan 18 08:56 UTC
+"malloc_2.realloc shrink" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/85 Testing: malloc_2.srealloc Max size
+26/85 Test: malloc_2.srealloc Max size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_2_test" "srealloc Max size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_2.srealloc Max size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc Max size
+Randomness seeded to: 3785814674
+===============================================================================
+All tests passed (35 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_2.srealloc Max size" end time: Jan 18 08:56 UTC
+"malloc_2.srealloc Max size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/85 Testing: malloc_3.Sanity
+27/85 Test: malloc_3.Sanity
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Sanity"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Sanity" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Sanity
+Randomness seeded to: 3494871712
+===============================================================================
+All tests passed (18 assertions in 1 test case)
+
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.Sanity" end time: Jan 18 08:56 UTC
+"malloc_3.Sanity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/85 Testing: malloc_3.Check size
+28/85 Test: malloc_3.Check size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Check size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Check size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Check size
+Randomness seeded to: 1411690212
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Check size
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:53
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:78: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  2 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 28 | 27 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Check size" end time: Jan 18 08:56 UTC
+"malloc_3.Check size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/85 Testing: malloc_3.0 size
+29/85 Test: malloc_3.0 size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "0 size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.0 size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: 0 size
+Randomness seeded to: 1313452890
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.0 size" end time: Jan 18 08:56 UTC
+"malloc_3.0 size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/85 Testing: malloc_3.Max size
+30/85 Test: malloc_3.Max size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Max size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Max size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Max size
+Randomness seeded to: 92271946
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Max size
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:94
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:101: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 100000032 (0x5f5e120)
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 6 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Max size" end time: Jan 18 08:56 UTC
+"malloc_3.Max size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/85 Testing: malloc_3.free
+31/85 Test: malloc_3.free
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "free"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.free" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free
+Randomness seeded to: 3439674583
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+free
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:115
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:134: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  3 == 2
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 21 | 20 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.free" end time: Jan 18 08:56 UTC
+"malloc_3.free" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/85 Testing: malloc_3.free 2
+32/85 Test: malloc_3.free 2
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "free 2"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.free 2" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free 2
+Randomness seeded to: 1356933805
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+free 2
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:161
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:180: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  3 == 2
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 21 | 20 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.free 2" end time: Jan 18 08:56 UTC
+"malloc_3.free 2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/85 Testing: malloc_3.free 3
+33/85 Test: malloc_3.free 3
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "free 3"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.free 3" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free 3
+Randomness seeded to: 3676741704
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+free 3
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:207
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:229: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  3 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 27 | 26 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.free 3" end time: Jan 18 08:56 UTC
+"malloc_3.free 3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/85 Testing: malloc_3.free holes 1
+34/85 Test: malloc_3.free holes 1
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "free holes 1"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.free holes 1" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free holes 1
+Randomness seeded to: 403246360
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+free holes 1
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:253
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:296: FAILED:
+  REQUIRE( _num_allocated_blocks() == 4 )
+with expansion:
+  5 == 4
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 50 | 49 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.free holes 1" end time: Jan 18 08:56 UTC
+"malloc_3.free holes 1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/85 Testing: malloc_3.free holes 2
+35/85 Test: malloc_3.free holes 2
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "free holes 2"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.free holes 2" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free holes 2
+Randomness seeded to: 3936214993
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+free holes 2
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:309
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:352: FAILED:
+  REQUIRE( _num_allocated_blocks() == 4 )
+with expansion:
+  5 == 4
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 50 | 49 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.free holes 2" end time: Jan 18 08:56 UTC
+"malloc_3.free holes 2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/85 Testing: malloc_3.free holes 3
+36/85 Test: malloc_3.free holes 3
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "free holes 3"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.free holes 3" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: free holes 3
+Randomness seeded to: 3207591420
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+free holes 3
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:365
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:408: FAILED:
+  REQUIRE( _num_allocated_blocks() == 4 )
+with expansion:
+  5 == 4
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 50 | 49 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.free holes 3" end time: Jan 18 08:56 UTC
+"malloc_3.free holes 3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/85 Testing: malloc_3.Wilderness available
+37/85 Test: malloc_3.Wilderness available
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Wilderness available"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Wilderness available" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Wilderness available
+Randomness seeded to: 4046638492
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Wilderness available
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:421
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:437: FAILED:
+  REQUIRE( bigger1 == wilderness )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 20 | 19 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Wilderness available" end time: Jan 18 08:56 UTC
+"malloc_3.Wilderness available" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/85 Testing: malloc_3.Wilderness available pad
+38/85 Test: malloc_3.Wilderness available pad
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Wilderness available pad"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Wilderness available pad" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Wilderness available pad
+Randomness seeded to: 804500261
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Wilderness available pad
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:456
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:477: FAILED:
+  REQUIRE( bigger1 == wilderness )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 27 | 26 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Wilderness available pad" end time: Jan 18 08:56 UTC
+"malloc_3.Wilderness available pad" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/85 Testing: malloc_3.Large allocation
+39/85 Test: malloc_3.Large allocation
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Large allocation"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Large allocation" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Large allocation
+Randomness seeded to: 2953281732
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Large allocation
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:500
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:507: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 131104 (0x20020)
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 6 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Large allocation" end time: Jan 18 08:56 UTC
+"malloc_3.Large allocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/85 Testing: malloc_3.Large unaligned allocation
+40/85 Test: malloc_3.Large unaligned allocation
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Large unaligned allocation"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Large unaligned allocation" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Large unaligned allocation
+Randomness seeded to: 2755523321
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Large unaligned allocation
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:525
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp:532: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 131105 (0x20021)
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 6 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Large unaligned allocation" end time: Jan 18 08:56 UTC
+"malloc_3.Large unaligned allocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/85 Testing: malloc_3.Reuse
+41/85 Test: malloc_3.Reuse
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Reuse"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Reuse" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse
+Randomness seeded to: 1439352986
+===============================================================================
+All tests passed (32 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.Reuse" end time: Jan 18 08:56 UTC
+"malloc_3.Reuse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/85 Testing: malloc_3.Reuse two blocks
+42/85 Test: malloc_3.Reuse two blocks
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Reuse two blocks"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Reuse two blocks" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks
+Randomness seeded to: 2658751615
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Reuse two blocks
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:67
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:100: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  2 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 41 | 40 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Reuse two blocks" end time: Jan 18 08:56 UTC
+"malloc_3.Reuse two blocks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/85 Testing: malloc_3.Reuse two blocks reverse
+43/85 Test: malloc_3.Reuse two blocks reverse
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Reuse two blocks reverse"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Reuse two blocks reverse" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks reverse
+Randomness seeded to: 66418084
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Reuse two blocks reverse
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:104
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:137: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  2 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 41 | 40 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Reuse two blocks reverse" end time: Jan 18 08:56 UTC
+"malloc_3.Reuse two blocks reverse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/85 Testing: malloc_3.Reuse two blocks both
+44/85 Test: malloc_3.Reuse two blocks both
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Reuse two blocks both"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Reuse two blocks both" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks both
+Randomness seeded to: 3744720460
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Reuse two blocks both
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:141
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:184: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  3 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 54 | 53 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Reuse two blocks both" end time: Jan 18 08:56 UTC
+"malloc_3.Reuse two blocks both" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/85 Testing: malloc_3.Reuse two blocks sizes small
+45/85 Test: malloc_3.Reuse two blocks sizes small
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Reuse two blocks sizes small"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Reuse two blocks sizes small" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks sizes small
+Randomness seeded to: 2656285020
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Reuse two blocks sizes small
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:188
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:231: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  3 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 54 | 53 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Reuse two blocks sizes small" end time: Jan 18 08:56 UTC
+"malloc_3.Reuse two blocks sizes small" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/85 Testing: malloc_3.Reuse two blocks sizes small reversed
+46/85 Test: malloc_3.Reuse two blocks sizes small reversed
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Reuse two blocks sizes small reversed"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Reuse two blocks sizes small reversed" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks sizes small reversed
+Randomness seeded to: 2109514002
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Reuse two blocks sizes small reversed
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:235
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:268: FAILED:
+  REQUIRE( c == b )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 41 | 40 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Reuse two blocks sizes small reversed" end time: Jan 18 08:56 UTC
+"malloc_3.Reuse two blocks sizes small reversed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/85 Testing: malloc_3.Reuse two blocks sizes large
+47/85 Test: malloc_3.Reuse two blocks sizes large
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Reuse two blocks sizes large"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Reuse two blocks sizes large" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Reuse two blocks sizes large
+Randomness seeded to: 1279574312
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Reuse two blocks sizes large
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:282
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp:325: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  3 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 54 | 53 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Reuse two blocks sizes large" end time: Jan 18 08:56 UTC
+"malloc_3.Reuse two blocks sizes large" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/85 Testing: malloc_3.scalloc
+48/85 Test: malloc_3.scalloc
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "scalloc"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.scalloc" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc
+Randomness seeded to: 291445387
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+scalloc
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:40
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:69: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  2 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 46 | 45 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.scalloc" end time: Jan 18 08:56 UTC
+"malloc_3.scalloc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/85 Testing: malloc_3.scalloc taint
+49/85 Test: malloc_3.scalloc taint
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "scalloc taint"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.scalloc taint" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc taint
+Randomness seeded to: 2177182603
+===============================================================================
+All tests passed (232 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.scalloc taint" end time: Jan 18 08:56 UTC
+"malloc_3.scalloc taint" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/85 Testing: malloc_3.scalloc 0 size
+50/85 Test: malloc_3.scalloc 0 size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "scalloc 0 size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.scalloc 0 size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc 0 size
+Randomness seeded to: 1056947192
+===============================================================================
+All tests passed (21 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.scalloc 0 size" end time: Jan 18 08:56 UTC
+"malloc_3.scalloc 0 size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/85 Testing: malloc_3.scalloc Max size num
+51/85 Test: malloc_3.scalloc Max size num
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "scalloc Max size num"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.scalloc Max size num" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc Max size num
+Randomness seeded to: 375065623
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+scalloc Max size num
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:131
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:138: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 100000032 (0x5f5e120)
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 6 passed | 1 failed
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.scalloc Max size num" end time: Jan 18 08:56 UTC
+"malloc_3.scalloc Max size num" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/85 Testing: malloc_3.scalloc Max size size
+52/85 Test: malloc_3.scalloc Max size size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "scalloc Max size size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.scalloc Max size size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc Max size size
+Randomness seeded to: 1103181731
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+scalloc Max size size
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:154
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:161: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 100000032 (0x5f5e120)
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 6 passed | 1 failed
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.scalloc Max size size" end time: Jan 18 08:56 UTC
+"malloc_3.scalloc Max size size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/85 Testing: malloc_3.scalloc Max size both
+53/85 Test: malloc_3.scalloc Max size both
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "scalloc Max size both"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.scalloc Max size both" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: scalloc Max size both
+Randomness seeded to: 2743278370
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+scalloc Max size both
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:177
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp:184: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 100000032 (0x5f5e120)
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 6 passed | 1 failed
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.scalloc Max size both" end time: Jan 18 08:56 UTC
+"malloc_3.scalloc Max size both" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/85 Testing: malloc_3.Split block
+54/85 Test: malloc_3.Split block
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Split block"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Split block" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Split block
+Randomness seeded to: 2712673656
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Split block
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:40
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:56: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  1 == 2
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 21 | 20 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Split block" end time: Jan 18 08:56 UTC
+"malloc_3.Split block" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/85 Testing: malloc_3.Split block under threshold
+55/85 Test: malloc_3.Split block under threshold
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Split block under threshold"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Split block under threshold" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Split block under threshold
+Randomness seeded to: 2568572936
+===============================================================================
+All tests passed (32 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.Split block under threshold" end time: Jan 18 08:56 UTC
+"malloc_3.Split block under threshold" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/85 Testing: malloc_3.Split block threshold
+56/85 Test: malloc_3.Split block threshold
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Split block threshold"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Split block threshold" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Split block threshold
+Randomness seeded to: 3072579772
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Split block threshold
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:88
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:104: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  1 == 2
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 21 | 20 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Split block threshold" end time: Jan 18 08:56 UTC
+"malloc_3.Split block threshold" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/85 Testing: malloc_3.Merge with prev block
+57/85 Test: malloc_3.Merge with prev block
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Merge with prev block"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Merge with prev block" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Merge with prev block
+Randomness seeded to: 2308374900
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Merge with prev block
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:112
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:132: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  2 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 27 | 26 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Merge with prev block" end time: Jan 18 08:56 UTC
+"malloc_3.Merge with prev block" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/85 Testing: malloc_3.Merge with prev block pad
+58/85 Test: malloc_3.Merge with prev block pad
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Merge with prev block pad"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Merge with prev block pad" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Merge with prev block pad
+Randomness seeded to: 641647334
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Merge with prev block pad
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:136
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:167: FAILED:
+  REQUIRE( _num_allocated_blocks() == 3 )
+with expansion:
+  4 == 3
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 41 | 40 passed | 1 failed
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Merge with prev block pad" end time: Jan 18 08:56 UTC
+"malloc_3.Merge with prev block pad" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/85 Testing: malloc_3.Merge with next block
+59/85 Test: malloc_3.Merge with next block
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Merge with next block"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Merge with next block" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Merge with next block
+Randomness seeded to: 4226646790
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Merge with next block
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:179
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:199: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  2 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 27 | 26 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Merge with next block" end time: Jan 18 08:56 UTC
+"malloc_3.Merge with next block" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/85 Testing: malloc_3.Merge with next block pad
+60/85 Test: malloc_3.Merge with next block pad
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Merge with next block pad"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Merge with next block pad" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Merge with next block pad
+Randomness seeded to: 3569199782
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Merge with next block pad
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:203
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:234: FAILED:
+  REQUIRE( _num_allocated_blocks() == 3 )
+with expansion:
+  4 == 3
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 41 | 40 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Merge with next block pad" end time: Jan 18 08:56 UTC
+"malloc_3.Merge with next block pad" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/85 Testing: malloc_3.Merge with both blocks
+61/85 Test: malloc_3.Merge with both blocks
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Merge with both blocks"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Merge with both blocks" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Merge with both blocks
+Randomness seeded to: 1272106929
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Merge with both blocks
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:246
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:277: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  3 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 42 | 41 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Merge with both blocks" end time: Jan 18 08:56 UTC
+"malloc_3.Merge with both blocks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/85 Testing: malloc_3.Merge with both blocks pad
+62/85 Test: malloc_3.Merge with both blocks pad
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "Merge with both blocks pad"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.Merge with both blocks pad" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: Merge with both blocks pad
+Randomness seeded to: 3120056911
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Merge with both blocks pad
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:281
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp:323: FAILED:
+  REQUIRE( _num_allocated_blocks() == 3 )
+with expansion:
+  5 == 3
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 56 | 55 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.Merge with both blocks pad" end time: Jan 18 08:56 UTC
+"malloc_3.Merge with both blocks pad" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/85 Testing: malloc_3.realloc
+63/85 Test: malloc_3.realloc
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "realloc"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.realloc" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: realloc
+Randomness seeded to: 2648038539
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+realloc
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc.cpp:40
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc.cpp:58: FAILED:
+  REQUIRE( b == a )
+with expansion:
+  0x000055aba537d068 == 0x000055aba537d020
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 14 | 13 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.realloc" end time: Jan 18 08:56 UTC
+"malloc_3.realloc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/85 Testing: malloc_3.realloc shrink
+64/85 Test: malloc_3.realloc shrink
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "realloc shrink"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.realloc shrink" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: realloc shrink
+Randomness seeded to: 4150065700
+===============================================================================
+All tests passed (36 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.realloc shrink" end time: Jan 18 08:56 UTC
+"malloc_3.realloc shrink" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/85 Testing: malloc_3.srealloc Max size
+65/85 Test: malloc_3.srealloc Max size
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc Max size"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc Max size" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc Max size
+Randomness seeded to: 3789366612
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc Max size
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc.cpp:104
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc.cpp:111: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 100000032 (0x5f5e120)
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 6 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc Max size" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc Max size" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/85 Testing: malloc_3.srealloc case a
+66/85 Test: malloc_3.srealloc case a
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case a"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case a" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case a
+Randomness seeded to: 2613940154
+===============================================================================
+All tests passed (112 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"malloc_3.srealloc case a" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case a" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/85 Testing: malloc_3.srealloc case a split
+67/85 Test: malloc_3.srealloc case a split
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case a split"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case a split" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case a split
+Randomness seeded to: 3270419263
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case a split
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:98
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:112: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  1 == 2
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 15 | 14 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case a split" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case a split" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/85 Testing: malloc_3.srealloc case a mmap
+68/85 Test: malloc_3.srealloc case a mmap
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case a mmap"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case a mmap" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case a mmap
+Randomness seeded to: 2455914043
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case a mmap
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:121
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:129: FAILED:
+  REQUIRE( 0 == (size_t)after - (size_t)base )
+with expansion:
+  0 == 131104 (0x20020)
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 12 | 11 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case a mmap" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case a mmap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/85 Testing: malloc_3.srealloc case b
+69/85 Test: malloc_3.srealloc case b
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case b"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case b" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case b
+Randomness seeded to: 1844922660
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case b
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:151
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:173: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 22 | 21 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case b" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case b" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/85 Testing: malloc_3.srealloc case b metadata
+70/85 Test: malloc_3.srealloc case b metadata
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case b metadata"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case b metadata" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case b metadata
+Randomness seeded to: 3665965924
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case b metadata
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:190
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:212: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 22 | 21 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case b metadata" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case b metadata" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/85 Testing: malloc_3.srealloc case b split
+71/85 Test: malloc_3.srealloc case b split
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case b split"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case b split" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case b split
+Randomness seeded to: 3569783674
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case b split
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:222
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:245: FAILED:
+  REQUIRE( _num_allocated_blocks() == 2 )
+with expansion:
+  3 == 2
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 23 | 22 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case b split" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case b split" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/85 Testing: malloc_3.srealloc case b wilderness
+72/85 Test: malloc_3.srealloc case b wilderness
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case b wilderness"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case b wilderness" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case b wilderness
+Randomness seeded to: 2519621721
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case b wilderness
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:255
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:274: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 21 | 20 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case b wilderness" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case b wilderness" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/85 Testing: malloc_3.srealloc case b wilderness 2
+73/85 Test: malloc_3.srealloc case b wilderness 2
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case b wilderness 2"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case b wilderness 2" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case b wilderness 2
+Randomness seeded to: 3424401784
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case b wilderness 2
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:284
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:303: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 21 | 20 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case b wilderness 2" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case b wilderness 2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/85 Testing: malloc_3.srealloc case c
+74/85 Test: malloc_3.srealloc case c
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case c"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case c" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case c
+Randomness seeded to: 1848526593
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case c
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:313
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:326: FAILED:
+  REQUIRE( new_a == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 14 | 13 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case c" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case c" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/85 Testing: malloc_3.srealloc case c 2
+75/85 Test: malloc_3.srealloc case c 2
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case c 2"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case c 2" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case c 2
+Randomness seeded to: 3549550004
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case c 2
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:336
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:351: FAILED:
+  REQUIRE( new_b == b )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 15 | 14 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case c 2" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case c 2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/85 Testing: malloc_3.srealloc case d
+76/85 Test: malloc_3.srealloc case d
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case d"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case d" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case d
+Randomness seeded to: 4262923556
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case d
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:365
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:386: FAILED:
+  REQUIRE( new_b == b )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 22 | 21 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case d" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case d" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/85 Testing: malloc_3.srealloc case d metadata
+77/85 Test: malloc_3.srealloc case d metadata
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case d metadata"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case d metadata" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case d metadata
+Randomness seeded to: 1382180658
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case d metadata
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:407
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:428: FAILED:
+  REQUIRE( new_b == b )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 22 | 21 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case d metadata" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case d metadata" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/85 Testing: malloc_3.srealloc case d split
+78/85 Test: malloc_3.srealloc case d split
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case d split"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case d split" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case d split
+Randomness seeded to: 2244722095
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case d split
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:442
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:463: FAILED:
+  REQUIRE( new_b == b )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 22 | 21 passed | 1 failed
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case d split" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case d split" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/85 Testing: malloc_3.srealloc case e
+79/85 Test: malloc_3.srealloc case e
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case e"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case e" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case e
+Randomness seeded to: 2776739776
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case e
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:478
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:506: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 24 | 23 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case e" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case e" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/85 Testing: malloc_3.srealloc case e no pad
+80/85 Test: malloc_3.srealloc case e no pad
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case e no pad"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case e no pad" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case e no pad
+Randomness seeded to: 1656793393
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case e no pad
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:521
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:547: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 23 | 22 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case e no pad" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case e no pad" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/85 Testing: malloc_3.srealloc case e split
+81/85 Test: malloc_3.srealloc case e split
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case e split"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case e split" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case e split
+Randomness seeded to: 2107938622
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case e split
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:561
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:590: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 24 | 23 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case e split" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case e split" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/85 Testing: malloc_3.srealloc case fi
+82/85 Test: malloc_3.srealloc case fi
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case fi"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case fi" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case fi
+Randomness seeded to: 1311746838
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case fi
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:605
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:631: FAILED:
+  REQUIRE( new_b == a )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 23 | 22 passed | 1 failed
+
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case fi" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case fi" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/85 Testing: malloc_3.srealloc case fii
+83/85 Test: malloc_3.srealloc case fii
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case fii"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case fii" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case fii
+Randomness seeded to: 1501115397
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case fii
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:645
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:670: FAILED:
+  REQUIRE( new_b == b )
+with expansion:
+  "" == ""
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 23 | 22 passed | 1 failed
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case fii" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case fii" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/85 Testing: malloc_3.srealloc case g
+84/85 Test: malloc_3.srealloc case g
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case g"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case g" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case g
+Randomness seeded to: 3126735185
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case g
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:688
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:728: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  5 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 69 | 68 passed | 1 failed
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case g" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case g" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/85 Testing: malloc_3.srealloc case h
+85/85 Test: malloc_3.srealloc case h
+Command: "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_3_test" "srealloc case h"
+Directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests
+"malloc_3.srealloc case h" start time: Jan 18 08:56 UTC
+Output:
+----------------------------------------------------------
+Filters: srealloc case h
+Randomness seeded to: 360250407
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+malloc_3_test is a Catch2 v3.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+srealloc case h
+-------------------------------------------------------------------------------
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:732
+...............................................................................
+
+/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp:774: FAILED:
+  REQUIRE( _num_allocated_blocks() == 1 )
+with expansion:
+  6 == 1
+
+===============================================================================
+test cases:  1 |  0 passed | 1 failed
+assertions: 70 | 69 passed | 1 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"malloc_3.srealloc case h" end time: Jan 18 08:56 UTC
+"malloc_3.srealloc case h" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 18 08:56 UTC
