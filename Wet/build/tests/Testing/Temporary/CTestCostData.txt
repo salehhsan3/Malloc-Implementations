@@ -1,35 +1,184 @@
-malloc_1.Sanity 1 0.0169622
-malloc_1.Check size 1 0.0121896
-malloc_1.0 size 1 0.0125701
-malloc_1.Max size 1 0.0127894
-malloc_2.Sanity 1 0.0141392
-malloc_2.Check size 1 0.012759
-malloc_2.0 size 1 0.0144723
-malloc_2.Max size 1 0.0142181
-malloc_2.free 1 0.0143199
-malloc_2.free 2 1 0.0173108
-malloc_2.free 3 1 0.0148794
-malloc_2.Reuse 1 0.0144314
-malloc_2.Reuse two blocks 1 0.0151036
-malloc_2.Reuse two blocks reverse 1 0.0173784
-malloc_2.Reuse two blocks both 1 0.0183192
-malloc_2.Reuse two blocks sizes small 1 0.0188749
-malloc_2.Reuse two blocks sizes large 1 0.0135202
-malloc_2.scalloc 1 0.0130217
-malloc_2.scalloc taint 1 0.013142
-malloc_2.scalloc 0 size 1 0.0112362
-malloc_2.scalloc Max size num 1 0.107421
-malloc_2.scalloc Max size size 1 0.103343
-malloc_2.scalloc Max size both 1 0.103268
-malloc_2.realloc 1 0.0125034
-malloc_2.realloc shrink 1 0.0151825
-malloc_2.srealloc Max size 1 0.0107917
-malloc_3.Challenge 0 - Memory Utilization 1 0.0135986
-malloc_3.test all sizes 1 0.012875
-malloc_3.Finding buddies test 1 0.0135757
-malloc_3.multiple big allocs test 1 0.0139571
-malloc_3.srealloc test 1 0.0118699
-malloc_3.scalloc test 1 0.0140995
-malloc_3.srealloc merges test 1 0.0145073
-malloc_3.weird values 1 0.0120851
+malloc_1.Sanity 6 0.0023392
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Sanity 6 0.00257587
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 1
+malloc_2.free 4 0.00379762
+malloc_2.free 4 0.00379762
+malloc_2.free 4 0.00379762
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.realloc 1 0.011646
+malloc_2.realloc 1 0.011646
+malloc_2.srealloc 0 0
+malloc_3.Challenge 0 0
+malloc_3.test 0 0
+malloc_3.Finding 0 0
+malloc_3.multiple 0 0
+malloc_3.srealloc 0 1
+malloc_3.scalloc 0 1
+malloc_3.srealloc 0 0
+malloc_3.weird 0 1
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 1
+malloc_2.free 4 0.00379762
+malloc_2.free 4 0.00379762
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.realloc 1 0.011646
+malloc_2.srealloc 0 0
+malloc_3.alignment 0 0
+malloc_3.Challenge 0 0
+malloc_3.test 0 0
+malloc_3.Finding 0 0
+malloc_3.multiple 0 0
+malloc_3.Exit 0 0
+malloc_3.srealloc 0 1
+malloc_3.scalloc 0 1
+malloc_3.srealloc 0 0
+malloc_3.weird 0 1
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 1
+malloc_2.free 4 0.00379762
+malloc_2.free 4 0.00379762
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.realloc 1 0.011646
+malloc_2.srealloc 0 0
+malloc_3.alignment 0 0
+malloc_3.Challenge 0 0
+malloc_3.test 0 0
+malloc_3.Finding 0 0
+malloc_3.multiple 0 0
+malloc_3.Exit 0 0
+malloc_3.srealloc 0 1
+malloc_3.scalloc 0 1
+malloc_3.srealloc 0 0
+malloc_3.weird 0 1
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 1
+malloc_2.free 4 0.00379762
+malloc_2.free 4 0.00379762
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.realloc 1 0.011646
+malloc_2.srealloc 0 0
+malloc_3.alignment 0 0
+malloc_3.Challenge 0 0
+malloc_3.test 0 0
+malloc_3.Finding 0 0
+malloc_3.multiple 0 0
+malloc_3.Exit 0 1
+malloc_3.srealloc 0 1
+malloc_3.scalloc 0 1
+malloc_3.srealloc 0 0
+malloc_3.weird 0 1
+malloc_1.Check 0 1
+malloc_1.0 0 1
+malloc_1.Max 0 1
+malloc_2.Check 0 1
+malloc_2.0 0 1
+malloc_2.Max 0 1
+malloc_2.free 4 0.00379762
+malloc_2.free 4 0.00379762
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.Reuse 1 0.0161251
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.scalloc 1 0.0483821
+malloc_2.realloc 1 0.011646
+malloc_2.srealloc 0 0
+malloc_3.alignment 0 0
+malloc_3.Challenge 0 0
+malloc_3.test 0 0
+malloc_3.Finding 0 0
+malloc_3.multiple 0 0
+malloc_3.Exit 0 1
+malloc_3.srealloc 0 1
+malloc_3.scalloc 0 1
+malloc_3.srealloc 0 0
+malloc_3.weird 0 1
+malloc_1.Check size 1 0.014696
+malloc_1.0 size 1 0.0138242
+malloc_1.Max size 1 0.0141359
+malloc_2.Check size 1 0.0133134
+malloc_2.0 size 1 0.0143572
+malloc_2.Max size 1 0.0144584
+malloc_2.free 2 1 0.0147213
+malloc_2.free 3 1 0.0161302
+malloc_2.Reuse two blocks 1 0.0161962
+malloc_2.Reuse two blocks reverse 1 0.0175162
+malloc_2.Reuse two blocks both 1 0.0141465
+malloc_2.Reuse two blocks sizes small 1 0.0138818
+malloc_2.Reuse two blocks sizes large 1 0.0136037
+malloc_2.scalloc taint 1 0.0224983
+malloc_2.scalloc 0 size 1 0.01157
+malloc_2.scalloc Max size num 1 0.10861
+malloc_2.scalloc Max size size 1 0.0992381
+malloc_2.scalloc Max size both 1 0.106886
+malloc_2.realloc shrink 1 0.0133753
+malloc_2.srealloc Max size 1 0.0135375
+malloc_3.Challenge 0 - Memory Utilization 1 0.0130557
+malloc_3.test all sizes 1 0.0140746
+malloc_3.Finding buddies test 1 0.0175822
+malloc_3.multiple big allocs test 1 0.0149094
+malloc_3.Exit Test 1 0.0182438
+malloc_3.srealloc test 1 0.0132557
+malloc_3.scalloc test 1 0.0145238
+malloc_3.srealloc merges test 1 0.0170094
+malloc_3.weird values 1 0.0169038
 ---

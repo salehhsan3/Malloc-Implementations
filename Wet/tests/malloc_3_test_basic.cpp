@@ -85,13 +85,13 @@ void verify_block_by_order(int order0free, int order0used, int order1free, int o
         verify_blocks(__total_blocks, testing_allocated_bytes, __total_free_blocks,__total_free_bytes_with_meta - __total_free_blocks*(_size_meta_data()));\
     }
 
-//TEST_CASE("alignment test")
-//{
+// TEST_CASE("alignment test")
+// {
 //    // Initial state
 //    void *base = sbrk(0);
 //    REQUIRE(((size_t)base)%MAX_ELEMENT_SIZE ==0);
-//
-//}
+
+// }
 
 TEST_CASE("Challenge 0 - Memory Utilization", "[malloc3]")
 {

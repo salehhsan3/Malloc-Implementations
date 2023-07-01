@@ -367,8 +367,13 @@ MallocMetaData* FreeList::findBlock(size_t required_size)
 {
     for (int i = 0; i < (MAX_ORDER+1); i++)
     {
-        for (MallocMetaData* curr = this->orders_list[i].head; curr != this->orders_list[i].tail; curr = curr->next)
+        for (MallocMetaData* curr = this->orders_list[i].head->next; curr != this->orders_list[i].tail; curr = curr->next)
         {
+            if (curr->cookies != this->cookies)
+            {
+                exit(0xdeadbeef);
+            }
+            
             if (curr->size >= required_size && curr->is_free == true)
             { // since the list is sorted we'll find the smallest size first.
                 return curr;
@@ -418,7 +423,7 @@ MallocMetaData* FreeList::splitBlock(MallocMetaData* data, size_t min_size)
             this->num_free_blocks += 1; //+2?
             this->num_free_bytes -= sizeof(MallocMetaData);
         }
-        else if(!inserted)
+        else if(!inserted || current_size <= MIN_BUDDY_BLOCK)
         {
             // can't split a block with the minimum size.
             /* potential errors: here!!!*/
@@ -686,6 +691,11 @@ void sfree(void* p)
     }
     MallocMetaData *datap = (MallocMetaData*)((char*)p - sizeof(MallocMetaData));
     MallocMetaData* merged = datap;
+    if (datap->cookies != free_list.cookies || datap->cookies != mmap_free_list.cookies)
+    {
+        // an overflow occured and someone used our data.
+        exit(0xdeadbeef);
+    }
     if (datap->is_free)
     {
         return; // block is already free!
@@ -748,122 +758,6 @@ void sfree(void* p)
         }
     }
 }
-
-
-// void* srealloc(void* oldp, size_t size)
-// {
-//     if (size <= 0 || size > MAX_SIZE)
-//     {
-//         return NULL;
-//     }
-
-//     if(oldp == NULL)
-//     {
-//         return smalloc(size);
-//     }
-//     MallocMetaData *datap = (MallocMetaData*)((char*)oldp - sizeof(MallocMetaData));
-//     if (datap->cookies != free_list.cookies || datap->cookies != mmap_free_list.cookies)
-//     {
-//         exit(0xdeadbeef);
-//     }
-//     void* newp = NULL;
-//     if (size >= 128*KB)
-//     {
-//         /*
-//         potential errors:
-//             should we check if (datap->size > MY_MMAP_THRESHOLD) or (datap->size >= MY_MMAP_THRESHOLD)?
-//         */
-//         if (datap->size == size)
-//         {
-//             return oldp;
-//         }
-//         else
-//         {
-//             newp = smalloc(size); // which will use mmap() in this case.
-//             mmap_free_list.deleteFromFreeList(datap);
-//             mmap_free_list.insertToFreeList((MallocMetaData*)newp);
-//         }
-//     }
-//     else
-//     {
-//         MallocMetaData *datap_prev = free_list.findPreviousBuddy(datap);
-//         MallocMetaData *datap_next = free_list.findNextBuddy(datap);
-//         bool managed_to_contain = false;
-
-//         if (datap->cookies != free_list.cookies ||
-//             (datap_prev != NULL && datap_prev->cookies != free_list.cookies) ||
-//             (datap_next != NULL && datap_next->cookies != free_list.cookies))
-//         {
-//             // an overflow occured and someone used our data.
-//             exit(0xdeadbeef);
-//         }
-
-//         MallocMetaData* merged = NULL;
-//         if (datap_prev != NULL)
-//         {
-//             if (datap_next != NULL)
-//             {
-//                 if ( ( ( datap_prev->size + datap->size) <= datap_next->size) && (!managed_to_contain) &&
-//                         ( ( datap_prev->size + sizeof(MallocMetaData) + datap->size) >= size ) )
-//                 {
-//                     merged = free_list.mergeBlocks(datap_prev, datap);
-//                     managed_to_contain = true;
-//                 }
-//                 else if ( ( ( datap_prev->size + datap->size) > datap_next->size) && (!managed_to_contain) &&
-//                         ( ( datap_next->size + sizeof(MallocMetaData) + datap->size) >= size ) )
-//                 {
-//                     merged = free_list.mergeBlocks(datap, datap_next);
-//                     managed_to_contain = true;
-//                 }
-//                 else if ( (!managed_to_contain) &&
-//                         ( ( datap_prev->size + sizeof(MallocMetaData) + datap_next->size + datap->size) >= size ) )
-//                 {
-//                     merged = free_list.mergeBlocks(datap_prev, datap);
-//                     merged = free_list.mergeBlocks(merged, datap_next);
-//                     managed_to_contain = true;
-//                 }
-//             }
-//             else
-//             {
-//                 if ( (!managed_to_contain) &&
-//                         ( ( datap_prev->size + sizeof(MallocMetaData) + datap->size) >= size ) )
-//                 {
-//                     merged = free_list.mergeBlocks(datap_prev, datap);
-//                     managed_to_contain = true;
-//                 }
-//             }
-//         }
-//         else
-//         {
-//             if (datap_next != NULL)
-//             {
-//                 if ( (!managed_to_contain) &&
-//                      ( ( datap_next->size + sizeof(MallocMetaData) + datap->size) >= size ) )
-//                 {
-//                     merged = free_list.mergeBlocks(datap, datap_next);
-//                     managed_to_contain = true;
-//                 }
-//             }
-//         }
-//         if (!managed_to_contain)
-//         {
-//             merged = free_list.findBlock(size);
-//             managed_to_contain = true;
-//         }
-//         newp = (void*)merged;
-//     }
-
-//     if(!newp)
-//     {
-//         return NULL;
-//     }
-//     if(memmove(newp, oldp, datap->size) != newp) 
-//     {
-//         return NULL;
-//     }
-//     sfree(oldp);
-//     return newp;
-// }
 
 void* srealloc(void* oldp, size_t size)
 {
