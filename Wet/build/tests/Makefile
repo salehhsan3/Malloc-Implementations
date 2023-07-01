@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet
+CMAKE_SOURCE_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/CMakeFiles /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests//CMakeFiles/progress.marks
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/CMakeFiles 0
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/CMakeFiles /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests//CMakeFiles/progress.marks
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/Experimental.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Experimental.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Experimental.dir/rule
 .PHONY : tests/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ Experimental: tests/CMakeFiles/Experimental.dir/rule
 
 # fast build rule for target.
 Experimental/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Experimental.dir/build.make tests/CMakeFiles/Experimental.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Experimental.dir/build.make tests/CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
 # Convenience name for target.
 tests/CMakeFiles/Nightly.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Nightly.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Nightly.dir/rule
 .PHONY : tests/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ Nightly: tests/CMakeFiles/Nightly.dir/rule
 
 # fast build rule for target.
 Nightly/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Nightly.dir/build.make tests/CMakeFiles/Nightly.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Nightly.dir/build.make tests/CMakeFiles/Nightly.dir/build
 .PHONY : Nightly/fast
 
 # Convenience name for target.
 tests/CMakeFiles/Continuous.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Continuous.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Continuous.dir/rule
 .PHONY : tests/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ Continuous: tests/CMakeFiles/Continuous.dir/rule
 
 # fast build rule for target.
 Continuous/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Continuous.dir/build.make tests/CMakeFiles/Continuous.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Continuous.dir/build.make tests/CMakeFiles/Continuous.dir/build
 .PHONY : Continuous/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyMemoryCheck.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyMemoryCheck.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyMemoryCheck.dir/rule
 .PHONY : tests/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
@@ -169,12 +169,12 @@ NightlyMemoryCheck: tests/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemoryCheck/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyMemoryCheck.dir/build.make tests/CMakeFiles/NightlyMemoryCheck.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyMemoryCheck.dir/build.make tests/CMakeFiles/NightlyMemoryCheck.dir/build
 .PHONY : NightlyMemoryCheck/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyStart.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyStart.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyStart.dir/rule
 .PHONY : tests/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ NightlyStart: tests/CMakeFiles/NightlyStart.dir/rule
 
 # fast build rule for target.
 NightlyStart/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyStart.dir/build.make tests/CMakeFiles/NightlyStart.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyStart.dir/build.make tests/CMakeFiles/NightlyStart.dir/build
 .PHONY : NightlyStart/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyUpdate.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyUpdate.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyUpdate.dir/rule
 .PHONY : tests/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -197,12 +197,12 @@ NightlyUpdate: tests/CMakeFiles/NightlyUpdate.dir/rule
 
 # fast build rule for target.
 NightlyUpdate/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyUpdate.dir/build.make tests/CMakeFiles/NightlyUpdate.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyUpdate.dir/build.make tests/CMakeFiles/NightlyUpdate.dir/build
 .PHONY : NightlyUpdate/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyConfigure.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyConfigure.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyConfigure.dir/rule
 .PHONY : tests/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
@@ -211,12 +211,12 @@ NightlyConfigure: tests/CMakeFiles/NightlyConfigure.dir/rule
 
 # fast build rule for target.
 NightlyConfigure/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyConfigure.dir/build.make tests/CMakeFiles/NightlyConfigure.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyConfigure.dir/build.make tests/CMakeFiles/NightlyConfigure.dir/build
 .PHONY : NightlyConfigure/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyBuild.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyBuild.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyBuild.dir/rule
 .PHONY : tests/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -225,12 +225,12 @@ NightlyBuild: tests/CMakeFiles/NightlyBuild.dir/rule
 
 # fast build rule for target.
 NightlyBuild/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyBuild.dir/build.make tests/CMakeFiles/NightlyBuild.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyBuild.dir/build.make tests/CMakeFiles/NightlyBuild.dir/build
 .PHONY : NightlyBuild/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyTest.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyTest.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyTest.dir/rule
 .PHONY : tests/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ NightlyTest: tests/CMakeFiles/NightlyTest.dir/rule
 
 # fast build rule for target.
 NightlyTest/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyTest.dir/build.make tests/CMakeFiles/NightlyTest.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyTest.dir/build.make tests/CMakeFiles/NightlyTest.dir/build
 .PHONY : NightlyTest/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyCoverage.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyCoverage.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyCoverage.dir/rule
 .PHONY : tests/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
@@ -253,12 +253,12 @@ NightlyCoverage: tests/CMakeFiles/NightlyCoverage.dir/rule
 
 # fast build rule for target.
 NightlyCoverage/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyCoverage.dir/build.make tests/CMakeFiles/NightlyCoverage.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyCoverage.dir/build.make tests/CMakeFiles/NightlyCoverage.dir/build
 .PHONY : NightlyCoverage/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlyMemCheck.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyMemCheck.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyMemCheck.dir/rule
 .PHONY : tests/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ NightlyMemCheck: tests/CMakeFiles/NightlyMemCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemCheck/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyMemCheck.dir/build.make tests/CMakeFiles/NightlyMemCheck.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyMemCheck.dir/build.make tests/CMakeFiles/NightlyMemCheck.dir/build
 .PHONY : NightlyMemCheck/fast
 
 # Convenience name for target.
 tests/CMakeFiles/NightlySubmit.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlySubmit.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlySubmit.dir/rule
 .PHONY : tests/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
@@ -281,12 +281,12 @@ NightlySubmit: tests/CMakeFiles/NightlySubmit.dir/rule
 
 # fast build rule for target.
 NightlySubmit/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlySubmit.dir/build.make tests/CMakeFiles/NightlySubmit.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlySubmit.dir/build.make tests/CMakeFiles/NightlySubmit.dir/build
 .PHONY : NightlySubmit/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalStart.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalStart.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalStart.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
@@ -295,12 +295,12 @@ ExperimentalStart: tests/CMakeFiles/ExperimentalStart.dir/rule
 
 # fast build rule for target.
 ExperimentalStart/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalStart.dir/build.make tests/CMakeFiles/ExperimentalStart.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalStart.dir/build.make tests/CMakeFiles/ExperimentalStart.dir/build
 .PHONY : ExperimentalStart/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalUpdate.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalUpdate.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalUpdate.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
@@ -309,12 +309,12 @@ ExperimentalUpdate: tests/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # fast build rule for target.
 ExperimentalUpdate/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalUpdate.dir/build.make tests/CMakeFiles/ExperimentalUpdate.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalUpdate.dir/build.make tests/CMakeFiles/ExperimentalUpdate.dir/build
 .PHONY : ExperimentalUpdate/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalConfigure.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalConfigure.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalConfigure.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -323,12 +323,12 @@ ExperimentalConfigure: tests/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # fast build rule for target.
 ExperimentalConfigure/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalConfigure.dir/build.make tests/CMakeFiles/ExperimentalConfigure.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalConfigure.dir/build.make tests/CMakeFiles/ExperimentalConfigure.dir/build
 .PHONY : ExperimentalConfigure/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalBuild.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalBuild.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalBuild.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
@@ -337,12 +337,12 @@ ExperimentalBuild: tests/CMakeFiles/ExperimentalBuild.dir/rule
 
 # fast build rule for target.
 ExperimentalBuild/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalBuild.dir/build.make tests/CMakeFiles/ExperimentalBuild.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalBuild.dir/build.make tests/CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalTest.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalTest.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalTest.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
@@ -351,12 +351,12 @@ ExperimentalTest: tests/CMakeFiles/ExperimentalTest.dir/rule
 
 # fast build rule for target.
 ExperimentalTest/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalTest.dir/build.make tests/CMakeFiles/ExperimentalTest.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalTest.dir/build.make tests/CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalCoverage.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalCoverage.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalCoverage.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -365,12 +365,12 @@ ExperimentalCoverage: tests/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # fast build rule for target.
 ExperimentalCoverage/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalCoverage.dir/build.make tests/CMakeFiles/ExperimentalCoverage.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalCoverage.dir/build.make tests/CMakeFiles/ExperimentalCoverage.dir/build
 .PHONY : ExperimentalCoverage/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalMemCheck.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalMemCheck.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalMemCheck.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
@@ -379,12 +379,12 @@ ExperimentalMemCheck: tests/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # fast build rule for target.
 ExperimentalMemCheck/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalMemCheck.dir/build.make tests/CMakeFiles/ExperimentalMemCheck.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalMemCheck.dir/build.make tests/CMakeFiles/ExperimentalMemCheck.dir/build
 .PHONY : ExperimentalMemCheck/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ExperimentalSubmit.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalSubmit.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalSubmit.dir/rule
 .PHONY : tests/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
@@ -393,12 +393,12 @@ ExperimentalSubmit: tests/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # fast build rule for target.
 ExperimentalSubmit/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalSubmit.dir/build.make tests/CMakeFiles/ExperimentalSubmit.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalSubmit.dir/build.make tests/CMakeFiles/ExperimentalSubmit.dir/build
 .PHONY : ExperimentalSubmit/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousStart.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousStart.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousStart.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -407,12 +407,12 @@ ContinuousStart: tests/CMakeFiles/ContinuousStart.dir/rule
 
 # fast build rule for target.
 ContinuousStart/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousStart.dir/build.make tests/CMakeFiles/ContinuousStart.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousStart.dir/build.make tests/CMakeFiles/ContinuousStart.dir/build
 .PHONY : ContinuousStart/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousUpdate.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousUpdate.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousUpdate.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
@@ -421,12 +421,12 @@ ContinuousUpdate: tests/CMakeFiles/ContinuousUpdate.dir/rule
 
 # fast build rule for target.
 ContinuousUpdate/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousUpdate.dir/build.make tests/CMakeFiles/ContinuousUpdate.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousUpdate.dir/build.make tests/CMakeFiles/ContinuousUpdate.dir/build
 .PHONY : ContinuousUpdate/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousConfigure.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousConfigure.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousConfigure.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
@@ -435,12 +435,12 @@ ContinuousConfigure: tests/CMakeFiles/ContinuousConfigure.dir/rule
 
 # fast build rule for target.
 ContinuousConfigure/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousConfigure.dir/build.make tests/CMakeFiles/ContinuousConfigure.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousConfigure.dir/build.make tests/CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousBuild.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousBuild.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousBuild.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ ContinuousBuild: tests/CMakeFiles/ContinuousBuild.dir/rule
 
 # fast build rule for target.
 ContinuousBuild/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousBuild.dir/build.make tests/CMakeFiles/ContinuousBuild.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousBuild.dir/build.make tests/CMakeFiles/ContinuousBuild.dir/build
 .PHONY : ContinuousBuild/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousTest.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousTest.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousTest.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
@@ -463,12 +463,12 @@ ContinuousTest: tests/CMakeFiles/ContinuousTest.dir/rule
 
 # fast build rule for target.
 ContinuousTest/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousTest.dir/build.make tests/CMakeFiles/ContinuousTest.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousTest.dir/build.make tests/CMakeFiles/ContinuousTest.dir/build
 .PHONY : ContinuousTest/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousCoverage.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousCoverage.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousCoverage.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
@@ -477,12 +477,12 @@ ContinuousCoverage: tests/CMakeFiles/ContinuousCoverage.dir/rule
 
 # fast build rule for target.
 ContinuousCoverage/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousCoverage.dir/build.make tests/CMakeFiles/ContinuousCoverage.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousCoverage.dir/build.make tests/CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousMemCheck.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousMemCheck.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousMemCheck.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
@@ -491,12 +491,12 @@ ContinuousMemCheck: tests/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # fast build rule for target.
 ContinuousMemCheck/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousMemCheck.dir/build.make tests/CMakeFiles/ContinuousMemCheck.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousMemCheck.dir/build.make tests/CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
 # Convenience name for target.
 tests/CMakeFiles/ContinuousSubmit.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousSubmit.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousSubmit.dir/rule
 .PHONY : tests/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
@@ -505,12 +505,12 @@ ContinuousSubmit: tests/CMakeFiles/ContinuousSubmit.dir/rule
 
 # fast build rule for target.
 ContinuousSubmit/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
 # Convenience name for target.
 tests/CMakeFiles/malloc_1_test.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/malloc_1_test.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/malloc_1_test.dir/rule
 .PHONY : tests/CMakeFiles/malloc_1_test.dir/rule
 
 # Convenience name for target.
@@ -519,12 +519,12 @@ malloc_1_test: tests/CMakeFiles/malloc_1_test.dir/rule
 
 # fast build rule for target.
 malloc_1_test/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/build
 .PHONY : malloc_1_test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/malloc_2_test.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/malloc_2_test.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/malloc_2_test.dir/rule
 .PHONY : tests/CMakeFiles/malloc_2_test.dir/rule
 
 # Convenience name for target.
@@ -533,12 +533,12 @@ malloc_2_test: tests/CMakeFiles/malloc_2_test.dir/rule
 
 # fast build rule for target.
 malloc_2_test/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/build
 .PHONY : malloc_2_test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/malloc_3_test.dir/rule:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/malloc_3_test.dir/rule
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/malloc_3_test.dir/rule
 .PHONY : tests/CMakeFiles/malloc_3_test.dir/rule
 
 # Convenience name for target.
@@ -547,7 +547,7 @@ malloc_3_test: tests/CMakeFiles/malloc_3_test.dir/rule
 
 # fast build rule for target.
 malloc_3_test/fast:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/build
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/build
 .PHONY : malloc_3_test/fast
 
 __/malloc_1.o: __/malloc_1.cpp.o
@@ -555,7 +555,7 @@ __/malloc_1.o: __/malloc_1.cpp.o
 
 # target to build an object file
 __/malloc_1.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o
 .PHONY : __/malloc_1.cpp.o
 
 __/malloc_1.i: __/malloc_1.cpp.i
@@ -563,7 +563,7 @@ __/malloc_1.i: __/malloc_1.cpp.i
 
 # target to preprocess a source file
 __/malloc_1.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.i
 .PHONY : __/malloc_1.cpp.i
 
 __/malloc_1.s: __/malloc_1.cpp.s
@@ -571,7 +571,7 @@ __/malloc_1.s: __/malloc_1.cpp.s
 
 # target to generate assembly for a file
 __/malloc_1.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.s
 .PHONY : __/malloc_1.cpp.s
 
 __/malloc_2.o: __/malloc_2.cpp.o
@@ -579,7 +579,7 @@ __/malloc_2.o: __/malloc_2.cpp.o
 
 # target to build an object file
 __/malloc_2.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/__/malloc_2.cpp.o
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/__/malloc_2.cpp.o
 .PHONY : __/malloc_2.cpp.o
 
 __/malloc_2.i: __/malloc_2.cpp.i
@@ -587,7 +587,7 @@ __/malloc_2.i: __/malloc_2.cpp.i
 
 # target to preprocess a source file
 __/malloc_2.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/__/malloc_2.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/__/malloc_2.cpp.i
 .PHONY : __/malloc_2.cpp.i
 
 __/malloc_2.s: __/malloc_2.cpp.s
@@ -595,7 +595,7 @@ __/malloc_2.s: __/malloc_2.cpp.s
 
 # target to generate assembly for a file
 __/malloc_2.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/__/malloc_2.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/__/malloc_2.cpp.s
 .PHONY : __/malloc_2.cpp.s
 
 __/malloc_3.o: __/malloc_3.cpp.o
@@ -603,7 +603,7 @@ __/malloc_3.o: __/malloc_3.cpp.o
 
 # target to build an object file
 __/malloc_3.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.o
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.o
 .PHONY : __/malloc_3.cpp.o
 
 __/malloc_3.i: __/malloc_3.cpp.i
@@ -611,7 +611,7 @@ __/malloc_3.i: __/malloc_3.cpp.i
 
 # target to preprocess a source file
 __/malloc_3.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.i
 .PHONY : __/malloc_3.cpp.i
 
 __/malloc_3.s: __/malloc_3.cpp.s
@@ -619,7 +619,7 @@ __/malloc_3.s: __/malloc_3.cpp.s
 
 # target to generate assembly for a file
 __/malloc_3.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.s
 .PHONY : __/malloc_3.cpp.s
 
 malloc_1_test.o: malloc_1_test.cpp.o
@@ -627,7 +627,7 @@ malloc_1_test.o: malloc_1_test.cpp.o
 
 # target to build an object file
 malloc_1_test.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o
 .PHONY : malloc_1_test.cpp.o
 
 malloc_1_test.i: malloc_1_test.cpp.i
@@ -635,7 +635,7 @@ malloc_1_test.i: malloc_1_test.cpp.i
 
 # target to preprocess a source file
 malloc_1_test.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.i
 .PHONY : malloc_1_test.cpp.i
 
 malloc_1_test.s: malloc_1_test.cpp.s
@@ -643,7 +643,7 @@ malloc_1_test.s: malloc_1_test.cpp.s
 
 # target to generate assembly for a file
 malloc_1_test.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_1_test.dir/build.make tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.s
 .PHONY : malloc_1_test.cpp.s
 
 malloc_2_test.o: malloc_2_test.cpp.o
@@ -651,7 +651,7 @@ malloc_2_test.o: malloc_2_test.cpp.o
 
 # target to build an object file
 malloc_2_test.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/malloc_2_test.cpp.o
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/malloc_2_test.cpp.o
 .PHONY : malloc_2_test.cpp.o
 
 malloc_2_test.i: malloc_2_test.cpp.i
@@ -659,7 +659,7 @@ malloc_2_test.i: malloc_2_test.cpp.i
 
 # target to preprocess a source file
 malloc_2_test.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/malloc_2_test.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/malloc_2_test.cpp.i
 .PHONY : malloc_2_test.cpp.i
 
 malloc_2_test.s: malloc_2_test.cpp.s
@@ -667,7 +667,7 @@ malloc_2_test.s: malloc_2_test.cpp.s
 
 # target to generate assembly for a file
 malloc_2_test.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/malloc_2_test.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_2_test.dir/build.make tests/CMakeFiles/malloc_2_test.dir/malloc_2_test.cpp.s
 .PHONY : malloc_2_test.cpp.s
 
 malloc_3_test_basic.o: malloc_3_test_basic.cpp.o
@@ -675,7 +675,7 @@ malloc_3_test_basic.o: malloc_3_test_basic.cpp.o
 
 # target to build an object file
 malloc_3_test_basic.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.o
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.o
 .PHONY : malloc_3_test_basic.cpp.o
 
 malloc_3_test_basic.i: malloc_3_test_basic.cpp.i
@@ -683,7 +683,7 @@ malloc_3_test_basic.i: malloc_3_test_basic.cpp.i
 
 # target to preprocess a source file
 malloc_3_test_basic.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.i
 .PHONY : malloc_3_test_basic.cpp.i
 
 malloc_3_test_basic.s: malloc_3_test_basic.cpp.s
@@ -691,128 +691,8 @@ malloc_3_test_basic.s: malloc_3_test_basic.cpp.s
 
 # target to generate assembly for a file
 malloc_3_test_basic.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.s
 .PHONY : malloc_3_test_basic.cpp.s
-
-malloc_3_test_reuse.o: malloc_3_test_reuse.cpp.o
-.PHONY : malloc_3_test_reuse.o
-
-# target to build an object file
-malloc_3_test_reuse.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_reuse.cpp.o
-.PHONY : malloc_3_test_reuse.cpp.o
-
-malloc_3_test_reuse.i: malloc_3_test_reuse.cpp.i
-.PHONY : malloc_3_test_reuse.i
-
-# target to preprocess a source file
-malloc_3_test_reuse.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_reuse.cpp.i
-.PHONY : malloc_3_test_reuse.cpp.i
-
-malloc_3_test_reuse.s: malloc_3_test_reuse.cpp.s
-.PHONY : malloc_3_test_reuse.s
-
-# target to generate assembly for a file
-malloc_3_test_reuse.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_reuse.cpp.s
-.PHONY : malloc_3_test_reuse.cpp.s
-
-malloc_3_test_scalloc.o: malloc_3_test_scalloc.cpp.o
-.PHONY : malloc_3_test_scalloc.o
-
-# target to build an object file
-malloc_3_test_scalloc.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_scalloc.cpp.o
-.PHONY : malloc_3_test_scalloc.cpp.o
-
-malloc_3_test_scalloc.i: malloc_3_test_scalloc.cpp.i
-.PHONY : malloc_3_test_scalloc.i
-
-# target to preprocess a source file
-malloc_3_test_scalloc.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_scalloc.cpp.i
-.PHONY : malloc_3_test_scalloc.cpp.i
-
-malloc_3_test_scalloc.s: malloc_3_test_scalloc.cpp.s
-.PHONY : malloc_3_test_scalloc.s
-
-# target to generate assembly for a file
-malloc_3_test_scalloc.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_scalloc.cpp.s
-.PHONY : malloc_3_test_scalloc.cpp.s
-
-malloc_3_test_split_and_merge.o: malloc_3_test_split_and_merge.cpp.o
-.PHONY : malloc_3_test_split_and_merge.o
-
-# target to build an object file
-malloc_3_test_split_and_merge.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_split_and_merge.cpp.o
-.PHONY : malloc_3_test_split_and_merge.cpp.o
-
-malloc_3_test_split_and_merge.i: malloc_3_test_split_and_merge.cpp.i
-.PHONY : malloc_3_test_split_and_merge.i
-
-# target to preprocess a source file
-malloc_3_test_split_and_merge.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_split_and_merge.cpp.i
-.PHONY : malloc_3_test_split_and_merge.cpp.i
-
-malloc_3_test_split_and_merge.s: malloc_3_test_split_and_merge.cpp.s
-.PHONY : malloc_3_test_split_and_merge.s
-
-# target to generate assembly for a file
-malloc_3_test_split_and_merge.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_split_and_merge.cpp.s
-.PHONY : malloc_3_test_split_and_merge.cpp.s
-
-malloc_3_test_srealloc.o: malloc_3_test_srealloc.cpp.o
-.PHONY : malloc_3_test_srealloc.o
-
-# target to build an object file
-malloc_3_test_srealloc.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc.cpp.o
-.PHONY : malloc_3_test_srealloc.cpp.o
-
-malloc_3_test_srealloc.i: malloc_3_test_srealloc.cpp.i
-.PHONY : malloc_3_test_srealloc.i
-
-# target to preprocess a source file
-malloc_3_test_srealloc.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc.cpp.i
-.PHONY : malloc_3_test_srealloc.cpp.i
-
-malloc_3_test_srealloc.s: malloc_3_test_srealloc.cpp.s
-.PHONY : malloc_3_test_srealloc.s
-
-# target to generate assembly for a file
-malloc_3_test_srealloc.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc.cpp.s
-.PHONY : malloc_3_test_srealloc.cpp.s
-
-malloc_3_test_srealloc_cases.o: malloc_3_test_srealloc_cases.cpp.o
-.PHONY : malloc_3_test_srealloc_cases.o
-
-# target to build an object file
-malloc_3_test_srealloc_cases.cpp.o:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc_cases.cpp.o
-.PHONY : malloc_3_test_srealloc_cases.cpp.o
-
-malloc_3_test_srealloc_cases.i: malloc_3_test_srealloc_cases.cpp.i
-.PHONY : malloc_3_test_srealloc_cases.i
-
-# target to preprocess a source file
-malloc_3_test_srealloc_cases.cpp.i:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc_cases.cpp.i
-.PHONY : malloc_3_test_srealloc_cases.cpp.i
-
-malloc_3_test_srealloc_cases.s: malloc_3_test_srealloc_cases.cpp.s
-.PHONY : malloc_3_test_srealloc_cases.s
-
-# target to generate assembly for a file
-malloc_3_test_srealloc_cases.cpp.s:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/malloc_3_test.dir/build.make tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc_cases.cpp.s
-.PHONY : malloc_3_test_srealloc_cases.cpp.s
 
 # Help Target
 help:
@@ -871,21 +751,6 @@ help:
 	@echo "... malloc_3_test_basic.o"
 	@echo "... malloc_3_test_basic.i"
 	@echo "... malloc_3_test_basic.s"
-	@echo "... malloc_3_test_reuse.o"
-	@echo "... malloc_3_test_reuse.i"
-	@echo "... malloc_3_test_reuse.s"
-	@echo "... malloc_3_test_scalloc.o"
-	@echo "... malloc_3_test_scalloc.i"
-	@echo "... malloc_3_test_scalloc.s"
-	@echo "... malloc_3_test_split_and_merge.o"
-	@echo "... malloc_3_test_split_and_merge.i"
-	@echo "... malloc_3_test_split_and_merge.s"
-	@echo "... malloc_3_test_srealloc.o"
-	@echo "... malloc_3_test_srealloc.i"
-	@echo "... malloc_3_test_srealloc.s"
-	@echo "... malloc_3_test_srealloc_cases.o"
-	@echo "... malloc_3_test_srealloc_cases.i"
-	@echo "... malloc_3_test_srealloc_cases.s"
 .PHONY : help
 
 
@@ -897,6 +762,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

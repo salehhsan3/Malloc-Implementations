@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet
+CMAKE_SOURCE_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build
 
 # Utility rule file for ExperimentalBuild.
 
@@ -67,7 +67,7 @@ include tests/CMakeFiles/ExperimentalBuild.dir/compiler_depend.make
 include tests/CMakeFiles/ExperimentalBuild.dir/progress.make
 
 tests/CMakeFiles/ExperimentalBuild:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/ctest -D ExperimentalBuild
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/ctest -D ExperimentalBuild
 
 ExperimentalBuild: tests/CMakeFiles/ExperimentalBuild
 ExperimentalBuild: tests/CMakeFiles/ExperimentalBuild.dir/build.make
@@ -78,10 +78,10 @@ tests/CMakeFiles/ExperimentalBuild.dir/build: ExperimentalBuild
 .PHONY : tests/CMakeFiles/ExperimentalBuild.dir/build
 
 tests/CMakeFiles/ExperimentalBuild.dir/clean:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/ExperimentalBuild.dir/cmake_clean.cmake
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/ExperimentalBuild.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/ExperimentalBuild.dir/clean
 
 tests/CMakeFiles/ExperimentalBuild.dir/depend:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/OS/HW4/OS-HW4/Wet /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/ExperimentalBuild.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/_deps/catch2-src/src/catch2/.. -I/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/generated-includes
+CXX_INCLUDES = -I/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-src/src/catch2/.. -I/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/generated-includes
 
-CXX_FLAGS = 
+CXX_FLAGS = -ffile-prefix-map=/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-src=.
 

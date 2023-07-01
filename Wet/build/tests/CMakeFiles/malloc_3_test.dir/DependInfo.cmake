@@ -8,19 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/malloc_3.cpp" "tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.o.d"
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_basic.cpp" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.o.d"
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_reuse.cpp" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_reuse.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_reuse.cpp.o.d"
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_scalloc.cpp" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_scalloc.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_scalloc.cpp.o.d"
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_split_and_merge.cpp" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_split_and_merge.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_split_and_merge.cpp.o.d"
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc.cpp" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc.cpp.o.d"
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_3_test_srealloc_cases.cpp" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc_cases.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_srealloc_cases.cpp.o.d"
+  "/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/malloc_3.cpp" "tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/__/malloc_3.cpp.o.d"
+  "/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests/malloc_3_test_basic.cpp" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.o" "gcc" "tests/CMakeFiles/malloc_3_test.dir/malloc_3_test_basic.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
-  "/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
+  "/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
+  "/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

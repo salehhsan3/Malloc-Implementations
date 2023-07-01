@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet
+CMAKE_SOURCE_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build
 
 # Utility rule file for Nightly.
 
@@ -67,7 +67,7 @@ include tests/CMakeFiles/Nightly.dir/compiler_depend.make
 include tests/CMakeFiles/Nightly.dir/progress.make
 
 tests/CMakeFiles/Nightly:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/ctest -D Nightly
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/ctest -D Nightly
 
 Nightly: tests/CMakeFiles/Nightly
 Nightly: tests/CMakeFiles/Nightly.dir/build.make
@@ -78,10 +78,10 @@ tests/CMakeFiles/Nightly.dir/build: Nightly
 .PHONY : tests/CMakeFiles/Nightly.dir/build
 
 tests/CMakeFiles/Nightly.dir/clean:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/Nightly.dir/cmake_clean.cmake
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/Nightly.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/Nightly.dir/clean
 
 tests/CMakeFiles/Nightly.dir/depend:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/OS/HW4/OS-HW4/Wet /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/CMakeFiles/Nightly.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests/CMakeFiles/Nightly.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/Nightly.dir/depend
 

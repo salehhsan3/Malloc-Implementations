@@ -1,6 +1,6 @@
 # Credits
 
-Tests were created and tested by Almog Tabo and Nadav Tur.
+Tests were created and tested by Almog Tabo and Nadav Tur. and updated at spring 2023.
 
 # Instructions:
 
@@ -20,12 +20,6 @@ Extract the tests folder to where your source files are, so that you have a test
     ├── malloc_1_test.cpp
     ├── malloc_2_test.cpp
     ├── malloc_3_test_basic.cpp
-    ├── malloc_3_test_reuse.cpp
-    ├── malloc_3_test_scalloc.cpp
-    ├── malloc_3_test_split_and_merge.cpp
-    ├── malloc_3_test_srealloc.cpp
-    ├── malloc_3_test_srealloc_cases.cpp
-    ├── malloc_4_test.cpp
     └── my_stdlib.h
 ```
 

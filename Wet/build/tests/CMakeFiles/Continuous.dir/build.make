@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet
+CMAKE_SOURCE_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build
 
 # Utility rule file for Continuous.
 
@@ -67,7 +67,7 @@ include tests/CMakeFiles/Continuous.dir/compiler_depend.make
 include tests/CMakeFiles/Continuous.dir/progress.make
 
 tests/CMakeFiles/Continuous:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/ctest -D Continuous
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/ctest -D Continuous
 
 Continuous: tests/CMakeFiles/Continuous
 Continuous: tests/CMakeFiles/Continuous.dir/build.make
@@ -78,10 +78,10 @@ tests/CMakeFiles/Continuous.dir/build: Continuous
 .PHONY : tests/CMakeFiles/Continuous.dir/build
 
 tests/CMakeFiles/Continuous.dir/clean:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/Continuous.dir/cmake_clean.cmake
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/Continuous.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/Continuous.dir/clean
 
 tests/CMakeFiles/Continuous.dir/depend:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/OS/HW4/OS-HW4/Wet /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/Continuous.dir/depend
 

@@ -13,6 +13,8 @@
 #define BUDDY_BLOCKS_NUM 32
 #define MAX_ORDER 10
 
+void DEBUG_PrintList(); // to remove
+
 class MallocMetaData
 {
 public:
@@ -133,10 +135,17 @@ static void initializeData(MallocMetaData* head_datas, MallocMetaData* tail_data
 
 static int getOrderFromSize(size_t size)
 {
+    double upper_size_bound = pow(2,MAX_ORDER)*MIN_BUDDY_BLOCK;
+    if (size == upper_size_bound)
+    {
+        return MAX_ORDER;
+    }
+    
     for (int i = 0; i < (MAX_ORDER); i++)
     {
-        double power = pow(2,i);
-        if ( static_cast<int>(power) == size)
+        double lower_bound = pow(2,i)*MIN_BUDDY_BLOCK;
+        double upper_bound = pow(2,i+1)*MIN_BUDDY_BLOCK;
+        if ( (size_t)(lower_bound) <= size && (size_t)upper_bound > size )
         {
             return i;
         }
@@ -167,11 +176,21 @@ MyList::MyList()
 MyList::MyList(MallocMetaData* head_node, MallocMetaData* tail_node)
 {
     this->head = head_node;
+    if (this->head)
+    {
+        this->head->next = tail_node;
+    }
     this->tail = tail_node;
+    if (this->tail)
+    {
+        this->tail->prev = head_node;
+    }
 }
 
 void MyList::insert(MallocMetaData* node)
 {
+    node->next = this->tail;
+    node->prev = this->tail->prev;
     this->tail->prev->next = node;
     this->tail->prev = node;
     SortMallocMetaDataList(this->head, this->tail);
@@ -261,6 +280,8 @@ public:
     void deleteFromFreeList(MallocMetaData* block);
     void* addMapping(size_t size);
     void* allocateBlock(size_t size);
+    void removeMapping(MallocMetaData* block);
+    bool isBlockContainable(MallocMetaData* block, size_t required_size);
 };
 
 void FreeList::initializeBuddySystem(MallocMetaData* head_nodes, MallocMetaData* tail_nodes)
@@ -268,9 +289,10 @@ void FreeList::initializeBuddySystem(MallocMetaData* head_nodes, MallocMetaData*
     // allign allocations to start at a multiple of (32*128*KB) to ease calculations later
     void* curr_prog_break = sbrk(0);
     size_t align_to_num = (32*128*KB);
-    size_t alloc_alignment_size = ( (size_t)((char*)curr_prog_break) % align_to_num ); // check correctness!!!!!!!!!!!
+    size_t alloc_alignment_size = align_to_num - ( ((size_t)curr_prog_break) % align_to_num ); // check correctness!!!!!!!!!!!
     this->wasted_block = curr_prog_break;
     this->wasted_block_size = alloc_alignment_size;
+    this->wasted_block = sbrk(alloc_alignment_size);
 
 
     // allocate the new aray of size (32*128*KB)
@@ -278,11 +300,12 @@ void FreeList::initializeBuddySystem(MallocMetaData* head_nodes, MallocMetaData*
     for (int i = 0; i < BUDDY_BLOCKS_NUM; i++)
     {
         MallocMetaData* curr = (MallocMetaData*)((char*)new_list + (i*DEFAULT_BUDDY_BLOCK));
-        MallocMetaData* next = (MallocMetaData*)((char*)new_list + ((i+1)*DEFAULT_BUDDY_BLOCK));
-        MallocMetaData* prev = (MallocMetaData*)((char*)new_list + ((i-1)*DEFAULT_BUDDY_BLOCK));
+        // MallocMetaData* next = (MallocMetaData*)((char*)new_list + ((i+1)*DEFAULT_BUDDY_BLOCK));
+        // MallocMetaData* prev = (MallocMetaData*)((char*)new_list + ((i-1)*DEFAULT_BUDDY_BLOCK));
         curr->size = (128*KB) - sizeof(MallocMetaData);
         curr->is_free = true;
         curr->cookies = this->cookies;
+        curr->addr = (void*)((char*)curr + sizeof(MallocMetaData));
         this->orders_list[MAX_ORDER].insert(curr); // at the beginning they're all inserted with size = 128KB
         this->num_free_bytes += curr->size;
         this->num_free_blocks += 1;
@@ -296,7 +319,9 @@ FreeList::FreeList(MallocMetaData* head_node, MallocMetaData* tail_node, MallocM
     srand(0);
     this->cookies = rand();
     this->head = head_node;
+    this->head->next = tail_node;
     this->tail = tail_node;
+    this->tail->prev = head_node;
     this->head->cookies = this->cookies;
     initializeData(head_datas, tail_datas);
     for (int i = 0; i < (MAX_ORDER+1); i++)
@@ -342,7 +367,7 @@ MallocMetaData* FreeList::findBlock(size_t required_size)
 {
     for (int i = 0; i < (MAX_ORDER+1); i++)
     {
-        for (MallocMetaData* curr = this->orders_list[i].head; curr != this->orders_list[i].tail; i++)
+        for (MallocMetaData* curr = this->orders_list[i].head; curr != this->orders_list[i].tail; curr = curr->next)
         {
             if (curr->size >= required_size && curr->is_free == true)
             { // since the list is sorted we'll find the smallest size first.
@@ -364,44 +389,58 @@ MallocMetaData* FreeList::splitBlock(MallocMetaData* data, size_t min_size)
     MallocMetaData* new_block = NULL;
     MallocMetaData* curr_block = data;
     int current_size = curr_block->size;
-    int new_size = (current_size - sizeof(MallocMetaData))/2; // the size of the block after splitting
+    size_t new_size = (current_size - sizeof(MallocMetaData))/2; // the size of the block after splitting
+    bool inserted = false;
     while ( min_size <= new_size )
     {
         current_size = curr_block->size;
         new_size = (current_size - sizeof(MallocMetaData))/2;
-        if ( (current_size + sizeof(MallocMetaData)) > MIN_BUDDY_BLOCK)
+        if ( (current_size + sizeof(MallocMetaData)) > MIN_BUDDY_BLOCK && new_size >= min_size)
         {
             curr_block->size = new_size;
-            new_block = (MallocMetaData*)((char*)curr_block + new_size );
+            /*potential errors:
+                added sizeof(MallocMetaData)
+            */
+            new_block = (MallocMetaData*)((char*)curr_block + new_size + sizeof(MallocMetaData) );
             new_block->cookies = curr_block->cookies;
             new_block->size = new_size;
             new_block->is_free = true;
             new_block->addr = (void*)((char*)new_block + sizeof(MallocMetaData));
             int index_old = getOrderFromSize( current_size + sizeof(MallocMetaData) );
             int index_new = getOrderFromSize( new_size + sizeof(MallocMetaData) );
+            // int index_old = getOrderFromSize( current_size );
+            // int index_new = getOrderFromSize( new_size );
             this->orders_list[index_old].removeBlock(curr_block);
             this->orders_list[index_new].insert(curr_block);
             this->orders_list[index_new].insert(new_block);
             current_size = new_size;
-            this->num_free_blocks += 1;
+            inserted = true;
+            this->num_free_blocks += 1; //+2?
             this->num_free_bytes -= sizeof(MallocMetaData);
         }
-        else
+        else if(!inserted)
         {
             // can't split a block with the minimum size.
-            return NULL;
+            /* potential errors: here!!!*/
+            return curr_block;
         }
     }
+    
     return curr_block;
 }
 
 MallocMetaData* FreeList::mergeBlocks(MallocMetaData* prev, MallocMetaData* curr)
-{
+{   
+    if ( (prev->size + sizeof(MallocMetaData) + curr->size) > DEFAULT_BUDDY_BLOCK )
+    {
+        return NULL;
+    }
+    
     int index_prev = getOrderFromSize(prev->size + sizeof(MallocMetaData));
     int index_curr = getOrderFromSize(curr->size + sizeof(MallocMetaData));
     this->orders_list[index_prev].removeBlock(prev);
     this->orders_list[index_curr].removeBlock(curr);
-    prev->size += curr->size + sizeof(MallocMetaData);
+    prev->size += (curr->size + sizeof(MallocMetaData));
     int new_index = getOrderFromSize( prev->size + sizeof(MallocMetaData));
     this->orders_list[new_index].insert(prev);
     this->num_free_blocks -= 1;
@@ -411,11 +450,16 @@ MallocMetaData* FreeList::mergeBlocks(MallocMetaData* prev, MallocMetaData* curr
 
 MallocMetaData* FreeList::findNextBuddy(MallocMetaData* block)
 {
+    if(!block)
+    {
+        return NULL;
+    }
     for (int i = 0; i < (MAX_ORDER + 1); i++)
     {
         for (MallocMetaData* curr = this->orders_list[i].head->next; curr != this->orders_list[i].tail; curr = curr->next)
         {
-            if ( ( (char*)((char*)block + block->size + sizeof(MallocMetaData)) == (char*)(curr) ) && curr->is_free )
+            MallocMetaData* end_of_block = (MallocMetaData*)((char*)block + sizeof(MallocMetaData) + block->size );
+            if ( ( end_of_block == curr ) && curr->is_free )
             {
                 return curr;
             }  
@@ -430,7 +474,8 @@ MallocMetaData* FreeList::findPreviousBuddy(MallocMetaData* block)
     {
         for (MallocMetaData* curr = this->orders_list[i].head->next; curr != this->orders_list[i].tail; curr = curr->next)
         {
-            if ( ( (char*)((char*)curr + curr->size + sizeof(MallocMetaData)) == (char*)(block) ) && curr->is_free )
+            MallocMetaData* end_of_curr = (MallocMetaData*)((char*)curr + sizeof(MallocMetaData) + curr->size);
+            if ( ( end_of_curr == block ) && curr->is_free )
             {
                 return curr;
             }  
@@ -441,8 +486,10 @@ MallocMetaData* FreeList::findPreviousBuddy(MallocMetaData* block)
 
 void FreeList::insertToFreeList(MallocMetaData* block)
 {
-    this->head->next->prev = block;
-    this->head->next = block;
+    block->next = this->tail;
+    block->prev = this->tail->prev;
+    this->tail->prev = block;
+    this->tail->prev->next = block;
     SortMallocMetaDataList(this->head, this->tail);
 }
 
@@ -475,7 +522,8 @@ void* FreeList::addMapping(size_t size)
     data->cookies = this->cookies;
     this->insertToFreeList(data);
 
-    this->num_allocated_bytes += (size + sizeof(MallocMetaData));
+    // this->num_allocated_bytes += (size + sizeof(MallocMetaData));
+    this->num_allocated_bytes += (size);
     this->num_allocated_blocks += 1;
     
     return data->addr;
@@ -497,31 +545,84 @@ void* FreeList::allocateBlock(size_t size)
             exit(0xdeadbeef);
         }
 
+        // if ( (found->size) > (2*size) ) /* potential errors: maybe wrong condition*/
         if ( (found->size - sizeof(MallocMetaData)) > 2*size )
         {
             MallocMetaData* split_block = this->splitBlock(found, size);
             /* potential errors*/
             // things to consider: when splitting the blocks I should change the number of free_bytes, block...
+            // potential errors: numerical calculations with size, etc.
             split_block->is_free = false;
+            this->num_free_blocks -= 1;
+            this->num_allocated_blocks += 1;
+            this->num_free_bytes -= (split_block->size);
+            this->num_allocated_bytes += (split_block->size);
             return split_block->addr;
         }
         else
         {
             found->is_free = false;
+            this->num_allocated_blocks += 1;
+            this->num_allocated_bytes += found->size;
+            this->num_free_blocks -= 1;
+            this->num_free_bytes -= found->size;
             return found->addr;
         }
     }
     return NULL;
 }
 
+void FreeList::removeMapping(MallocMetaData* block)
+{
+    for (MallocMetaData* curr = this->head->next; curr != this->tail; curr = curr->next)
+    {
+        if (block == curr)
+        {
+            curr->prev->next = curr->next;
+            curr->next->prev = curr->prev;
+        }
+    }   
+}
+
+bool FreeList::isBlockContainable(MallocMetaData* block, size_t required_size)
+{
+    MallocMetaData* next_buddy = this->findNextBuddy(block);
+    MallocMetaData* prev_buddy = this->findPreviousBuddy(block);
+    size_t accumulated_size = block->size;
+    while ( required_size > accumulated_size )
+    {
+        if ( next_buddy && prev_buddy && (prev_buddy->size <= next_buddy->size) )
+        {
+            accumulated_size += (prev_buddy->size);
+            prev_buddy = this->findPreviousBuddy(prev_buddy);
+        }
+        else if ( next_buddy && prev_buddy && ( prev_buddy->size > next_buddy->size ) )
+        {
+            accumulated_size += (next_buddy->size);
+            next_buddy = this->findNextBuddy(next_buddy);
+        }
+        else if ( next_buddy && (!prev_buddy) )
+        {
+            accumulated_size += (next_buddy->size);
+            next_buddy = this->findNextBuddy(next_buddy);
+        }
+        else if ( (!next_buddy) && prev_buddy )
+        {
+            accumulated_size += (prev_buddy->size);
+            prev_buddy = this->findPreviousBuddy(prev_buddy);
+        }
+    }
+    return (accumulated_size >= required_size);
+}
+
 // the following elements are allocated on the stack!
 static MallocMetaData head_datas[BUDDY_BLOCKS_NUM+1];
 static MallocMetaData tail_datas[BUDDY_BLOCKS_NUM+1];
-static MallocMetaData head_node = MallocMetaData();
+static MallocMetaData list_head_node = MallocMetaData();
 static MallocMetaData mmap_head_node = MallocMetaData();
-static MallocMetaData tail_node = MallocMetaData();
+static MallocMetaData list_tail_node = MallocMetaData();
 static MallocMetaData mmap_tail_node = MallocMetaData();
-static FreeList free_list = FreeList(&head_node, &tail_node, head_datas, tail_datas);
+static FreeList free_list = FreeList(&list_head_node, &list_tail_node, head_datas, tail_datas);
 static FreeList mmap_free_list = FreeList(&mmap_head_node, &mmap_tail_node, head_datas, tail_datas);
 static bool buddy_system_init = false;
 
@@ -533,7 +634,7 @@ void *smalloc(size_t size)
         buddy_system_init = true;
     }
     
-    if (size <= 0)
+    if (size <= 0 || size > MAX_SIZE)
     {    
         /* 
         potential error:
@@ -584,6 +685,12 @@ void sfree(void* p)
         return;
     }
     MallocMetaData *datap = (MallocMetaData*)((char*)p - sizeof(MallocMetaData));
+    MallocMetaData* merged = datap;
+    if (datap->is_free)
+    {
+        return; // block is already free!
+    }
+    
     if (datap->size >= MY_MMAP_THRESHOLD)
     {
         /*
@@ -591,39 +698,172 @@ void sfree(void* p)
             should we check if (datap->size > MY_MMAP_THRESHOLD) or (datap->size >= MY_MMAP_THRESHOLD)?
             according to the notes in section 3, we shouldn't consider munmapped areas as freed
         */
+        mmap_free_list.num_allocated_blocks -= 1;
+        mmap_free_list.num_allocated_bytes -= datap->size;
+        datap->is_free = true;
+        MallocMetaData* found = mmap_free_list.findBlock(datap->size);
+        if (found)
+        {
+            mmap_free_list.removeMapping(datap);
+        }
         munmap(datap, datap->size + sizeof(MallocMetaData));
+        // wasnt very clear on what we should do with unmapped blocks, check it.
     }
     else
     {
-        MallocMetaData *datap_prev = free_list.findPreviousBuddy(datap);
-        MallocMetaData *datap_next = free_list.findNextBuddy(datap);
+        merged->is_free = true;
+        free_list.num_free_blocks += 1;
+        free_list.num_free_bytes += merged->size;
+        free_list.num_allocated_blocks -= 1;
+        free_list.num_allocated_bytes -= merged->size;
 
-        if (datap->cookies != free_list.cookies ||
+        MallocMetaData *datap_prev = free_list.findPreviousBuddy(merged);
+        MallocMetaData *datap_next = free_list.findNextBuddy(merged);
+        while ( (datap_next || datap_prev) && (merged))
+        {
+            if (datap->cookies != free_list.cookies ||
             (datap_prev != NULL && datap_prev->cookies != free_list.cookies) ||
             (datap_next != NULL && datap_next->cookies != free_list.cookies))
-        {
-            // an overflow occured and someone used our data.
-            exit(0xdeadbeef);
-        }
-        MallocMetaData* merged = NULL;
-        if (datap_prev != NULL)
-        {
-            merged = free_list.mergeBlocks(datap_prev, datap);
-            if (datap_next != NULL)
             {
-                merged = free_list.mergeBlocks(merged, datap_next);
+                // an overflow occured and someone used our data.
+                exit(0xdeadbeef);
             }
-        }
-        else
-        {
-            if (datap_next != NULL)
+            if (datap_prev != NULL)
             {
-                merged = free_list.mergeBlocks(datap, datap_next);
+                merged = free_list.mergeBlocks(datap_prev, merged);
+                if (datap_next != NULL)
+                {
+                    merged = free_list.mergeBlocks(merged, datap_next);
+                }
             }
+            else
+            {
+                if (datap_next != NULL)
+                {
+                    merged = free_list.mergeBlocks(merged, datap_next);
+                }
+            }
+            datap_prev = free_list.findPreviousBuddy(merged);
+            datap_next = free_list.findNextBuddy(merged);
         }
     }
 }
 
+
+// void* srealloc(void* oldp, size_t size)
+// {
+//     if (size <= 0 || size > MAX_SIZE)
+//     {
+//         return NULL;
+//     }
+
+//     if(oldp == NULL)
+//     {
+//         return smalloc(size);
+//     }
+//     MallocMetaData *datap = (MallocMetaData*)((char*)oldp - sizeof(MallocMetaData));
+//     if (datap->cookies != free_list.cookies || datap->cookies != mmap_free_list.cookies)
+//     {
+//         exit(0xdeadbeef);
+//     }
+//     void* newp = NULL;
+//     if (size >= 128*KB)
+//     {
+//         /*
+//         potential errors:
+//             should we check if (datap->size > MY_MMAP_THRESHOLD) or (datap->size >= MY_MMAP_THRESHOLD)?
+//         */
+//         if (datap->size == size)
+//         {
+//             return oldp;
+//         }
+//         else
+//         {
+//             newp = smalloc(size); // which will use mmap() in this case.
+//             mmap_free_list.deleteFromFreeList(datap);
+//             mmap_free_list.insertToFreeList((MallocMetaData*)newp);
+//         }
+//     }
+//     else
+//     {
+//         MallocMetaData *datap_prev = free_list.findPreviousBuddy(datap);
+//         MallocMetaData *datap_next = free_list.findNextBuddy(datap);
+//         bool managed_to_contain = false;
+
+//         if (datap->cookies != free_list.cookies ||
+//             (datap_prev != NULL && datap_prev->cookies != free_list.cookies) ||
+//             (datap_next != NULL && datap_next->cookies != free_list.cookies))
+//         {
+//             // an overflow occured and someone used our data.
+//             exit(0xdeadbeef);
+//         }
+
+//         MallocMetaData* merged = NULL;
+//         if (datap_prev != NULL)
+//         {
+//             if (datap_next != NULL)
+//             {
+//                 if ( ( ( datap_prev->size + datap->size) <= datap_next->size) && (!managed_to_contain) &&
+//                         ( ( datap_prev->size + sizeof(MallocMetaData) + datap->size) >= size ) )
+//                 {
+//                     merged = free_list.mergeBlocks(datap_prev, datap);
+//                     managed_to_contain = true;
+//                 }
+//                 else if ( ( ( datap_prev->size + datap->size) > datap_next->size) && (!managed_to_contain) &&
+//                         ( ( datap_next->size + sizeof(MallocMetaData) + datap->size) >= size ) )
+//                 {
+//                     merged = free_list.mergeBlocks(datap, datap_next);
+//                     managed_to_contain = true;
+//                 }
+//                 else if ( (!managed_to_contain) &&
+//                         ( ( datap_prev->size + sizeof(MallocMetaData) + datap_next->size + datap->size) >= size ) )
+//                 {
+//                     merged = free_list.mergeBlocks(datap_prev, datap);
+//                     merged = free_list.mergeBlocks(merged, datap_next);
+//                     managed_to_contain = true;
+//                 }
+//             }
+//             else
+//             {
+//                 if ( (!managed_to_contain) &&
+//                         ( ( datap_prev->size + sizeof(MallocMetaData) + datap->size) >= size ) )
+//                 {
+//                     merged = free_list.mergeBlocks(datap_prev, datap);
+//                     managed_to_contain = true;
+//                 }
+//             }
+//         }
+//         else
+//         {
+//             if (datap_next != NULL)
+//             {
+//                 if ( (!managed_to_contain) &&
+//                      ( ( datap_next->size + sizeof(MallocMetaData) + datap->size) >= size ) )
+//                 {
+//                     merged = free_list.mergeBlocks(datap, datap_next);
+//                     managed_to_contain = true;
+//                 }
+//             }
+//         }
+//         if (!managed_to_contain)
+//         {
+//             merged = free_list.findBlock(size);
+//             managed_to_contain = true;
+//         }
+//         newp = (void*)merged;
+//     }
+
+//     if(!newp)
+//     {
+//         return NULL;
+//     }
+//     if(memmove(newp, oldp, datap->size) != newp) 
+//     {
+//         return NULL;
+//     }
+//     sfree(oldp);
+//     return newp;
+// }
 
 void* srealloc(void* oldp, size_t size)
 {
@@ -637,6 +877,7 @@ void* srealloc(void* oldp, size_t size)
         return smalloc(size);
     }
     MallocMetaData *datap = (MallocMetaData*)((char*)oldp - sizeof(MallocMetaData));
+    bool merged_blocks = false;
     if (datap->cookies != free_list.cookies || datap->cookies != mmap_free_list.cookies)
     {
         exit(0xdeadbeef);
@@ -663,7 +904,8 @@ void* srealloc(void* oldp, size_t size)
     {
         MallocMetaData *datap_prev = free_list.findPreviousBuddy(datap);
         MallocMetaData *datap_next = free_list.findNextBuddy(datap);
-        bool managed_to_contain = false;
+        bool managed_to_contain = free_list.isBlockContainable(datap, size);
+        MallocMetaData* merged = datap;
 
         if (datap->cookies != free_list.cookies ||
             (datap_prev != NULL && datap_prev->cookies != free_list.cookies) ||
@@ -672,60 +914,61 @@ void* srealloc(void* oldp, size_t size)
             // an overflow occured and someone used our data.
             exit(0xdeadbeef);
         }
-
-        MallocMetaData* merged = NULL;
-        if (datap_prev != NULL)
+        
+        if (managed_to_contain)
         {
-            if (datap_next != NULL)
+            while ( merged && (merged->size < size) )
             {
-                if ( ( ( datap_prev->size + datap->size) <= datap_next->size) && (!managed_to_contain) &&
-                        ( ( datap_prev->size + sizeof(MallocMetaData) + datap->size) >= size ) )
+                if ( datap_next && datap_prev && (datap_prev->size <= datap_next->size) )
                 {
-                    merged = free_list.mergeBlocks(datap_prev, datap);
-                    managed_to_contain = true;
+                    free_list.num_allocated_bytes -= merged->size;
+                    free_list.num_free_bytes -= merged->size;
+                    merged = free_list.mergeBlocks(datap_prev, merged);
+                    merged->is_free = false;
+                    free_list.num_free_bytes -= (sizeof(MallocMetaData));
+                    free_list.num_allocated_bytes += merged->size;
+                    merged_blocks = true;
                 }
-                else if ( ( ( datap_prev->size + datap->size) > datap_next->size) && (!managed_to_contain) &&
-                        ( ( datap_next->size + sizeof(MallocMetaData) + datap->size) >= size ) )
+                else if ( datap_next && datap_prev && ( datap_prev->size > datap_next->size ) )
                 {
-                    merged = free_list.mergeBlocks(datap, datap_next);
-                    managed_to_contain = true;
-                }
-                else if ( (!managed_to_contain) &&
-                        ( ( datap_prev->size + sizeof(MallocMetaData) + datap_next->size + datap->size) >= size ) )
-                {
-                    merged = free_list.mergeBlocks(datap_prev, datap);
+                    free_list.num_allocated_bytes -= merged->size;
+                    free_list.num_free_bytes -= merged->size;
                     merged = free_list.mergeBlocks(merged, datap_next);
-                    managed_to_contain = true;
+                    merged->is_free = false;
+                    free_list.num_free_bytes -= (sizeof(MallocMetaData));
+                    free_list.num_allocated_bytes += merged->size;
+                    merged_blocks = true;
                 }
-            }
-            else
-            {
-                if ( (!managed_to_contain) &&
-                        ( ( datap_prev->size + sizeof(MallocMetaData) + datap->size) >= size ) )
+                else if ( datap_next && (!datap_prev) )
                 {
-                    merged = free_list.mergeBlocks(datap_prev, datap);
-                    managed_to_contain = true;
+                    free_list.num_allocated_bytes -= merged->size;
+                    free_list.num_free_bytes -= merged->size;
+                    merged = free_list.mergeBlocks(merged, datap_next);
+                    merged->is_free = false;
+                    free_list.num_free_bytes -= (sizeof(MallocMetaData));
+                    free_list.num_allocated_bytes += (merged->size);
+                    merged_blocks = true;
                 }
-            }
+                else if ( (!datap_next) && datap_prev )
+                {
+                    free_list.num_allocated_bytes -= merged->size;
+                    free_list.num_free_bytes -= merged->size;
+                    merged = free_list.mergeBlocks(datap_prev, merged);
+                    merged->is_free = false;
+                    free_list.num_free_bytes -= (sizeof(MallocMetaData));
+                    free_list.num_allocated_bytes += (merged->size);
+                    merged_blocks = true;
+                } 
+                datap_prev = free_list.findPreviousBuddy(merged);
+                datap_next = free_list.findNextBuddy(merged);
+            }   
         }
         else
-        {
-            if (datap_next != NULL)
-            {
-                if ( (!managed_to_contain) &&
-                     ( ( datap_next->size + sizeof(MallocMetaData) + datap->size) >= size ) )
-                {
-                    merged = free_list.mergeBlocks(datap, datap_next);
-                    managed_to_contain = true;
-                }
-            }
-        }
-        if (!managed_to_contain)
         {
             merged = free_list.findBlock(size);
             managed_to_contain = true;
         }
-        newp = (void*)merged;
+        newp = merged->addr;
     }
 
     if(!newp)
@@ -736,31 +979,54 @@ void* srealloc(void* oldp, size_t size)
     {
         return NULL;
     }
-    sfree(oldp);
+    if ( (!merged_blocks) && (newp != oldp) )
+    {
+        sfree(oldp);
+    }
     return newp;
 }
 
- size_t _num_free_blocks()
- {
-    return free_list.num_free_blocks + mmap_free_list.num_allocated_blocks;
- }
+size_t _num_free_blocks()
+{
+    return free_list.num_free_blocks + mmap_free_list.num_free_blocks;
+}
 
- size_t _num_free_bytes()
- {
-    return free_list.num_free_bytes + mmap_free_list.num_allocated_bytes;
- }
+size_t _num_free_bytes()
+{
+    return free_list.num_free_bytes + mmap_free_list.num_free_bytes;
+}
 
- size_t _num_allocated_blocks()
- {
+size_t _num_allocated_blocks()
+{
     return (free_list.num_allocated_blocks + free_list.num_free_blocks
-                + mmap_free_list.num_allocated_blocks + mmap_free_list.num_free_blocks); // look at function 7
- }
- 
- size_t _num_allocated_bytes()
- {
+            + mmap_free_list.num_allocated_blocks + mmap_free_list.num_free_blocks); // look at function 7
+}
+
+size_t _num_allocated_bytes()
+{
     return (free_list.num_allocated_bytes + free_list.num_free_bytes
-                + mmap_free_list.num_allocated_bytes + mmap_free_list.num_free_bytes);
- }
+            + mmap_free_list.num_allocated_bytes + mmap_free_list.num_free_bytes);
+}
+
+// size_t _num_free_blocks()
+// {
+// return free_list.num_free_blocks + mmap_free_list.num_free_blocks;
+// }
+
+// size_t _num_free_bytes()
+// {
+// return free_list.num_free_bytes + mmap_free_list.num_free_bytes;
+// }
+
+// size_t _num_allocated_blocks()
+// {
+// return (free_list.num_allocated_blocks + mmap_free_list.num_allocated_blocks ); // look at function 7
+// }
+
+// size_t _num_allocated_bytes()
+// {
+// return (free_list.num_allocated_bytes + mmap_free_list.num_allocated_bytes );
+// }
 
 size_t _size_meta_data()
 {
@@ -772,27 +1038,45 @@ size_t _num_meta_data_bytes()
     return (_size_meta_data() * _num_allocated_blocks());
 }
 
-// void DEBUG_PrintList()
-// {
-//     MallocMetaData *p = head_data.next;
-//     printf("\nPrinting list:\n(size, addr)\n");
-//     printf("HEAD <--> ");
-//     for (; p != NULL; p = p->next)
-//     {
-//         if(!p->is_free)
-//             printf("(%d, %p) <--> ", p->size, p->addr);
-//     }
-//     printf("NULL\n");
+void DEBUG_PrintList()
+{
+    int freed = 0;
+    int allocated = 0;
+    for (int i = 0; i < (MAX_ORDER+1); i++)
+    {
+        int i_freed = 0;
+        int i_allocated = 0;
 
-    
-    
-    
-    
-//     p = head_data.next;
-//     printf("HEAD <--> ");
-//     for (; p != NULL; p = p->next)
-//     {
-//         printf("(%d, %p) <--> ", p->size, p->addr);
-//     }
-//     printf("NULL\n");
-// }
+        MallocMetaData *p = free_list.orders_list[i].head->next;
+        printf("\nPrinting list with free:\n(size, addr)\n");
+        printf("HEAD <--> ");
+        for (; p != free_list.orders_list[i].tail; p = p->next)
+        {
+            if(p->is_free)
+            {
+                printf("(%ld, %p) <--> ", p->size, p->addr);
+                freed++;
+                i_freed++;
+            }
+        }
+        printf("TAIL(freed:%d, order:%d)\n",i_freed,i);
+        printf("--------------------------------------------------------------------------\n");
+
+        p = free_list.orders_list[i].head->next;
+        printf("\nPrinting list with allocated:\n(size, addr)\n");
+        printf("HEAD <--> ");
+        for (; p != free_list.orders_list[i].tail; p = p->next)
+        {
+            if(!p->is_free)
+            {
+                printf("(%ld, %p) <--> ", p->size, p->addr);
+                allocated++;
+                i_allocated++;
+            }       
+        }
+        printf("TAIL(allocated:%d, order:%d)\n",i_allocated,i);
+        printf("--------------------------------------------------------------------------\n");
+    }
+        printf("Total Free: %d, Total allocated: %d\n", freed, allocated);
+        printf("===========================================================================\n");
+}

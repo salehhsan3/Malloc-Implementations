@@ -1,3 +1,0 @@
-/mnt/c/Users/Saleh/Desktop/OS/OS-HW4/Wet/build/_deps/catch2-subbuild/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/Saleh/Desktop/OS/OS-HW4/Wet/build/_deps/catch2-subbuild/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Saleh/Desktop/OS/OS-HW4/Wet/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate.dir

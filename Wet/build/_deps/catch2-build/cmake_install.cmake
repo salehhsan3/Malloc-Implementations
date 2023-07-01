@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/_deps/catch2-src
+# Install script for directory: /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/_deps/catch2-build/src/cmake_install.cmake")
+  include("/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-build/src/cmake_install.cmake")
 
 endif()
 

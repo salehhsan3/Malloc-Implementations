@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/_deps/catch2-src/src
+# Install script for directory: /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

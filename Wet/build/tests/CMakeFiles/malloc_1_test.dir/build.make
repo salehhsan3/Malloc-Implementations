@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet
+CMAKE_SOURCE_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/OS/HW4/OS-HW4/Wet/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/malloc_1_test.dir/depend.make
@@ -70,32 +70,32 @@ include tests/CMakeFiles/malloc_1_test.dir/progress.make
 include tests/CMakeFiles/malloc_1_test.dir/flags.make
 
 tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o: tests/CMakeFiles/malloc_1_test.dir/flags.make
-tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o: /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_1_test.cpp
+tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o: /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests/malloc_1_test.cpp
 tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o: tests/CMakeFiles/malloc_1_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o"
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o -MF CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o.d -o CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o -c /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_1_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o"
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o -MF CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o.d -o CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.o -c /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests/malloc_1_test.cpp
 
 tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.i"
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_1_test.cpp > CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests/malloc_1_test.cpp > CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.i
 
 tests/CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.s"
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests/malloc_1_test.cpp -o CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests/malloc_1_test.cpp -o CMakeFiles/malloc_1_test.dir/malloc_1_test.cpp.s
 
 tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o: tests/CMakeFiles/malloc_1_test.dir/flags.make
-tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o: /home/student/Desktop/OS/HW4/OS-HW4/Wet/malloc_1.cpp
+tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o: /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/malloc_1.cpp
 tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o: tests/CMakeFiles/malloc_1_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o"
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o -MF CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o.d -o CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o -c /home/student/Desktop/OS/HW4/OS-HW4/Wet/malloc_1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o"
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o -MF CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o.d -o CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.o -c /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/malloc_1.cpp
 
 tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.i"
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/OS/HW4/OS-HW4/Wet/malloc_1.cpp > CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.i
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/malloc_1.cpp > CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.i
 
 tests/CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.s"
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/OS/HW4/OS-HW4/Wet/malloc_1.cpp -o CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.s
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/malloc_1.cpp -o CMakeFiles/malloc_1_test.dir/__/malloc_1.cpp.s
 
 # Object files for target malloc_1_test
 malloc_1_test_OBJECTS = \
@@ -111,19 +111,19 @@ tests/malloc_1_test: tests/CMakeFiles/malloc_1_test.dir/build.make
 tests/malloc_1_test: _deps/catch2-build/src/libCatch2Main.a
 tests/malloc_1_test: _deps/catch2-build/src/libCatch2.a
 tests/malloc_1_test: tests/CMakeFiles/malloc_1_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable malloc_1_test"
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/malloc_1_test.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && /usr/bin/cmake -D TEST_TARGET=malloc_1_test -D TEST_EXECUTABLE=/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_1_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX=malloc_1. -D TEST_SUFFIX= -D TEST_LIST=malloc_1_test_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D CTEST_FILE=/home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/malloc_1_test_tests-b12d07c.cmake -P /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/_deps/catch2-src/extras/CatchAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable malloc_1_test"
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/malloc_1_test.dir/link.txt --verbose=$(VERBOSE)
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && /usr/bin/cmake -D TEST_TARGET=malloc_1_test -D TEST_EXECUTABLE=/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests/malloc_1_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX=malloc_1. -D TEST_SUFFIX= -D TEST_LIST=malloc_1_test_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D CTEST_FILE=/mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests/malloc_1_test_tests-b12d07c.cmake -P /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/_deps/catch2-src/extras/CatchAddTests.cmake
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/malloc_1_test.dir/build: tests/malloc_1_test
 .PHONY : tests/CMakeFiles/malloc_1_test.dir/build
 
 tests/CMakeFiles/malloc_1_test.dir/clean:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/malloc_1_test.dir/cmake_clean.cmake
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/malloc_1_test.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/malloc_1_test.dir/clean
 
 tests/CMakeFiles/malloc_1_test.dir/depend:
-	cd /home/student/Desktop/OS/HW4/OS-HW4/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/OS/HW4/OS-HW4/Wet /home/student/Desktop/OS/HW4/OS-HW4/Wet/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests /home/student/Desktop/OS/HW4/OS-HW4/Wet/build/tests/CMakeFiles/malloc_1_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests /mnt/c/Users/Saleh/Desktop/OS/Spring/OS_HW4_SPRING23/Wet/build/tests/CMakeFiles/malloc_1_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/malloc_1_test.dir/depend
 
