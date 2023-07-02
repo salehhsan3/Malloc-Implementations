@@ -16,6 +16,7 @@
 
 static bool allocated_by_smalloc = false;
 static bool allocated_by_scalloc = false;
+static int  alloc_src_in_srealloc = 0;
 
 void DEBUG_PrintList(); // to remove
 
@@ -28,8 +29,8 @@ public:
     void* addr;
     MallocMetaData* next;
     MallocMetaData* prev;
-    bool allocated_by_smalloc;
-    MallocMetaData(int cookies = 0, size_t size = 0, bool is_free = false, MallocMetaData* next = NULL, MallocMetaData* prev = NULL, bool allocated_by_smalloc = false);
+    int allocation_src; /* can get 3 values: 0 := unallocated, 1 := allocated by scalloc, 2:= allocated by smalloc*/
+    MallocMetaData(int cookies = 0, size_t size = 0, bool is_free = false, MallocMetaData* next = NULL, MallocMetaData* prev = NULL, int allocation_src = 0);
     ~MallocMetaData() = default;
     bool operator==(MallocMetaData& other);
     bool operator< (MallocMetaData& other);
@@ -38,13 +39,13 @@ public:
     bool operator<=(MallocMetaData& other);
 };
 
-MallocMetaData::MallocMetaData(int cookies, size_t size, bool is_free, MallocMetaData* next, MallocMetaData* prev, bool allocated_by_smalloc):
+MallocMetaData::MallocMetaData(int cookies, size_t size, bool is_free, MallocMetaData* next, MallocMetaData* prev, int allocation_src):
     cookies(cookies),
     size(size),
     is_free(is_free),
     next(next),
     prev(prev),
-    allocated_by_smalloc(allocated_by_smalloc)
+    allocation_src(allocation_src)
 {}
 
 bool MallocMetaData::operator==(MallocMetaData& other)
@@ -522,26 +523,27 @@ void* FreeList::addMapping(size_t size)
 {
     void* allocation;
     int case_num = 0;
-    if ( allocated_by_scalloc && (size >= 2*MB) )
+    if ( ( allocated_by_scalloc || (alloc_src_in_srealloc == 1) ) && (size >= 2*MB) )
     {
         case_num = 1;
     }
-    else if ( allocated_by_smalloc && (size >= 4*MB) )
+    else if ( ( allocated_by_smalloc || (alloc_src_in_srealloc == 2) ) && (size >= 4*MB) )
     {
         case_num = 2;
     }
     allocated_by_scalloc = false;
     allocated_by_smalloc = false;
+    alloc_src_in_srealloc = 0;
     switch (case_num)
     {
     case 1:
         allocation = mmap(NULL, (size + sizeof(MallocMetaData)), (PROT_EXEC | PROT_READ | PROT_WRITE), (MAP_PRIVATE | MAP_ANONYMOUS | MAP_HUGETLB), -1, 0); // correct flags / prot?
-        ((MallocMetaData*)allocation)->allocated_by_smalloc = false;
+        ((MallocMetaData*)allocation)->allocation_src = 1;
         break;
 
     case 2:
         allocation = mmap(NULL, (size + sizeof(MallocMetaData)), (PROT_EXEC | PROT_READ | PROT_WRITE), (MAP_PRIVATE | MAP_ANONYMOUS | MAP_HUGETLB), -1, 0); // correct flags / prot?
-        ((MallocMetaData*)allocation)->allocated_by_smalloc = true;
+        ((MallocMetaData*)allocation)->allocation_src = 2;
         break;    
     
     default:
@@ -824,6 +826,7 @@ void* srealloc(void* oldp, size_t size)
         }
         else
         {
+            alloc_src_in_srealloc = datap->allocation_src;
             newp = smalloc(size); // which will use mmap() in this case.
             mmap_free_list.deleteFromFreeList(datap);
             mmap_free_list.insertToFreeList((MallocMetaData*)newp);

@@ -9,6 +9,12 @@
         "vector": "cpp",
         "xhash": "cpp",
         "xstring": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "initializer_list": "cpp",
+        "type_traits": "cpp",
+        "xutility": "cpp",
+        "array": "cpp",
+        "regex": "cpp",
+        "utility": "cpp"
     }
 }
